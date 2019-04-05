@@ -36,97 +36,85 @@
     </header>
     <section class="user-photo">
       <h2 class="visually-hidden">Самые популярные фото</h2>
-      <article class="user-photo__panorama">
+      <article class="panorama">
         <h3 class="visually-hidden">Над городом</h3>
-        <img class="user-photo__panorama-img" src="img/panorama.jpg" width="320" height="137" alt="Вид с моста">
-        <div class="user-photo__inscription">
-          <p class="user-photo__author">Анна<time class="user-photo__time" title="4 апреля 2019 11:55"
+        <img class="panorama__img" src="img/panorama.jpg" width="320" height="137" alt="Вид с моста">
+        <div class="panorama__inscription">
+          <p class="panorama__author">Анна<time class="user-photo__time" title="4 апреля 2019 11:55"
               datetime="2019-04-04 11:55">(5 МИНУТ НАЗАД)</time></p>
-          <p class="user-photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в
+          <p class="panorama__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в
             перископе, задавайте свои вопросы!</p>
-          <p class="user-photo__like">Нравится:215</p>
+          <p class="panorama__like">Нравится:215</p>
         </div>
       </article>
 
       <ul class="user-photo__list">
-       <!-- <li>
-          <article class="user-photo__item">
-            <h3 class="visually-hidden">Белая машина</h3>
-            <img class="user-photo__img" src="img/white-car.jpg" width="280" height="180" alt="Белая машина">
-            <div class="user-photo__inscription">
-              <p class="user-photo__author">Левон<time class="user-photo__time" title="4 апреля 2018 7:00" datetime="2019-04-04 7:00">(5 ЧАСОВ НАЗАД)</time></p>
-              <p class="user-photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <p class="user-photo__like">Нравится:356</p>
-            </div>
-          </article>
-        </li>
-        -->
         <li>
-            <article class="user-photo__item">
+            <article class="photo">
               <h3 class="visually-hidden">Белая машина</h3>
-              <img class="user-photo__img" src="img/white-car.jpg" width="280" height="180" alt="Белая машина">
-              <div class="user-photo__inscription">
-                <p class="user-photo__author">Левон <time class="user-photo__time" title="4 апреля 2019 7:00" datetime="2019-04-02 07:00">(5 ЧАСОВ НАЗАД)</time></p>
-                <p class="user-photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-                <p class="user-photo__like">Нравится:356</p>
+              <img class="photo__img" src="img/white-car.jpg" width="280" height="180" alt="Белая машина">
+              <div class="photo__inscription">
+                <p class="photo__author">Левон <time class="photo__time" title="4 апреля 2019 7:00" datetime="2019-04-02 07:00">(5 ЧАСОВ НАЗАД)</time></p>
+                <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <p class="photo__like">Нравится:356</p>
               </div>
             </article>
           </li>
         <li>
-          <article class="user-photo__item">
+          <article class="photo">
             <h3 class="visually-hidden">Барабаны</h3>
-            <img class="user-photo__img" src="img/drums.jpg" width="280" height="180" alt="Барабаны">
-            <div class="user-photo__inscription">
-              <p class="user-photo__author">Антон<time class="user-photo__time" title="4 апреля 2019 0:00" datetime="2019-04-02 00:00">(12 ЧАСОВ НАЗАД)</time></p>
-              <p class="user-photo__text">Соседи будут рады!</p>
-              <p class="user-photo__like">Нравится:666</p>
+            <img class="photo__img" src="img/drums.jpg" width="280" height="180" alt="Барабаны">
+            <div class="photo__inscription">
+              <p class="photo__author">Антон<time class="photo__time" title="4 апреля 2019 0:00" datetime="2019-04-02 00:00">(12 ЧАСОВ НАЗАД)</time></p>
+              <p class="photo__text">Соседи будут рады!</p>
+              <p class="photo__like">Нравится:666</p>
             </div>
           </article>
         </li>
         <li>
-          <article class="user-photo__item">
+          <article class="photo">
               <h3 class="visually-hidden">Окна</h3>
-              <img class="user-photo__img" src="img/windows.jpg" width="280" height="180" alt="Окна">
-              <div class="user-photo__inscription">
-                <p class="user-photo__author">Борис<time class="user-photo__time" title="3 апреля 2019 4:00" datetime="2019-04-03 04:00">(12 ЧАСОВ НАЗАД)</time></p>
-                <p class="user-photo__text">десь могла быть ваша цитата о высоком и вечном.</p>
-                <p class="user-photo__like">Нравится:215</p>
+              <img class="photo__img" src="img/windows.jpg" width="280" height="180" alt="Окна">
+              <div class="photo__inscription">
+                <p class="photo__author">Борис<time class="photo__time" title="3 апреля 2019 4:00" datetime="2019-04-03 04:00">(12 ЧАСОВ НАЗАД)</time></p>
+                <p class="photo__text">десь могла быть ваша цитата о высоком и вечном.</p>
+                <p class="photo__like">Нравится:215</p>
               </div>
             </article>
         </li>
         <li>
-          <article class="user-photo__item">
+          <article class="photo">
             <h3 class="visually-hidden">Кубанская бахча</h3>
-            <img class="user-photo__img" src="img/kuban.jpg" width="280" height="180" alt="Кубанская бахча">
-            <div class="user-photo__inscription">
-              <p class="user-photo__author">Сергей<time class="user-photo__time" title="3 апреля 2019 11:00"
+            <img class="photo__img" src="img/kuban.jpg" width="280" height="180" alt="Кубанская бахча">
+            <div class="photo__inscription">
+              <p class="photo__author">Сергей<time class="photo__time" title="3 апреля 2019 11:00"
                   datetime="2019-04-03 11:00">(25 ЧАСОВ НАЗАД)</time></p>
-              <p class="user-photo__text">Самая кубанская в мире!</p>
-              <p class="user-photo__like">Нравится:4</p>
+              <p class="photo__text">Самая кубанская в мире!</p>
+              <p class="photo__like">Нравится:4</p>
             </div>
           </article>
         </li>
         <li>
-          <article class="user-photo__item">
+          <article class="photo">
             <h3 class="visually-hidden">Вид с горы</h3>
-            <img class="user-photo__img" src="img/legs.jpg" width="280" height="180" alt="Вид с горы">
-            <div class="user-photo__inscription">
-              <p class="user-photo__author">Максим<time class="user-photo__time" title="2 апреля 2019 11:00"
+            <img class="photo__img" src="img/legs.jpg" width="280" height="180" alt="Вид с горы">
+            <div class="photo__inscription">
+              <p class="photo__author">Максим<time class="photo__time" title="2 апреля 2019 11:00"
                   datetime="2019-04-02 20:00">(40 ЧАСОВ НАЗАД)</time></p>
-              <p class="user-photo__text">Где снег-то?</p>
-              <p class="user-photo__like">Нравится:150</p>
+              <p class="photo__text">Где снег-то?</p>
+              <p class="photo__like">Нравится:150</p>
             </div>
           </article>
         </li>
         <li>
-          <article class="user-photo__item">
+          <article class="photo">
             <h3 class="visually-hidden">Крыло самолета</h3>
-            <img class="user-photo__img" src="img/plane-wing.jpg" width="280" height="180" alt="Крыло самолета">
-            <div class="user-photo__inscription">
-              <p class="user-photo__author">Надежда<time class="user-photo__time" title="2 апреля 2019 15:00"
+            <img class="photo__img" src="img/plane-wing.jpg" width="280" height="180" alt="Крыло самолета">
+            <div class="uphoto__inscription">
+              <p class="photo__author">Надежда<time class="photo__time" title="2 апреля 2019 15:00"
                   datetime="2019-04-02 15:00">(45 ЧАСОВ НАЗАД)</time></p>
-              <p class="user-photo__text">Всем GM и взаимные лайки!</p>
-              <p class="user-photo__like">Нравится:2560</p>
+              <p class="photo__text">Всем GM и взаимные лайки!</p>
+              <p class="photo__like">Нравится:2560</p>
             </div>
           </article>
         </li>
@@ -136,7 +124,7 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__logo">
-      <a class="page-footer__logo-link">
+      <a class="page-footer__logo-link" href="index.html">
         <img class="page-footer__logo-image" src="img/logotype-blue-tablet.svg" width="147" height="40"
           alt="Фотоприложение «Pink»">
       </a>
