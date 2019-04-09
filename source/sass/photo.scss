@@ -1,0 +1,46 @@
+.photo__img {
+    width: 280px;
+    margin: 0 auto;
+}
+.photo__inscription {
+  width: 246px;
+  margin: -10px 0 20px 0;
+  padding: 35px 17px 25px 17px;
+  background-color: $bg-color;
+}
+.photo__author {
+font-size: $font-size-base;
+line-height: $line-height-base;
+font-weight: 600;
+}
+.photo__time {
+font-size: $font-size-sm;
+line-height: $line-height-base;
+font-weight: 300;
+text-transform: uppercase;
+}
+
+.photo__text {
+font-size: $font-size-base;
+line-height: $line-height-base;
+font-weight: 400;
+margin-bottom: 20px;
+}
+.photo__like {
+position: relative;
+font-size: $font-size-sm;
+line-height: $line-height-base;
+font-weight: 400;
+color: $highlight-color;
+padding-left: 30px;
+}
+.photo__like::before {
+content: '';
+position: absolute;
+top: 5px;
+left: 0;
+width: 12.5px;
+height: 12px;
+background: url('../img/icon-heart1.svg') no-repeat;
+}
+

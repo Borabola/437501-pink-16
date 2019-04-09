@@ -1,0 +1,27 @@
+@import 'normalize';
+@import 'visually-hidden';
+@import 'variables';
+@import 'page-header';
+@import 'site-list';
+@import 'downloads';
+@import 'operating-systems';
+@import 'button';
+@import 'advantages';
+@import 'phones';
+@import 'page-main';
+@import 'user-photo';
+@import 'panorama';
+@import 'photo';
+@import 'page-footer';
+@import 'social';
+
+
+
+
+
+body {
+  margin:  0 auto;
+  padding: 0;
+  width: 320px;
+  color: $primary-color;
+  }
