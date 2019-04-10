@@ -1,19 +1,19 @@
 .downloads {
   background: $primary-color;
   margin-bottom: 45px;
-  }
+}
+
 .downloads__img-wrapper {
   min-height: 397px;
-  background:  url('../img/iphone-hand-mobile@1x.png') no-repeat right 62px bottom,
-               url('../img/bg-back-mobile@1x.jpg') no-repeat center;
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat right 62px bottom, url("../img/bg-back-mobile@1x.jpg") no-repeat center;
 }
+
 .downloads__img {
   display: flex;
   justify-content: flex-end;
   margin: 0;
   margin-right: 56px;
-  padding-top: 105px;
   padding: 0;
+  padding-top: 105px;
   vertical-align: bottom;
-
-  }
+}

@@ -1,14 +1,15 @@
 .panorama__inscription {
-
-    background-color: $bg-color;
-    margin: -10px 20px 20px 20px;
-    padding: 35px 17px 25px 17px;
+  background-color: $bg-color;
+  margin: -10px 20px 20px 20px;
+  padding: 35px 17px 25px 17px;
 }
+
 .panorama__author {
   font-size: $font-size-base;
   line-height: $line-height-base;
   font-weight: 600;
 }
+
 .user-photo__time {
   font-size: $font-size-sm;
   line-height: $line-height-base;
@@ -22,6 +23,7 @@
   font-weight: 400;
   margin-bottom: 20px;
 }
+
 .panorama__like {
   position: relative;
   font-size: $font-size-sm;
@@ -30,13 +32,13 @@
   color: $highlight-color;
   padding-left: 30px;
 }
+
 .panorama__like::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 5px;
   left: 0;
   width: 12.5px;
   height: 12px;
-  background: url('../img/icon-heart1.svg') no-repeat;
+  background: url("../img/icon-heart1.svg") no-repeat;
 }
-

@@ -1,11 +1,15 @@
 .advantages__header {
   margin: 0;
+  margin-bottom: 15px;
   padding: 0;
+  font-size: $font-size-medium;
+  line-height: $line-height-sm;
+  color: $primary-color;
+  font-weight: 600;
   text-align: center;
 }
 
-
-h2.advantages__slogan  {
+h2.advantages__slogan {
   font-size: $font-size-large;
   line-height: $line-height-base;
   color: $primary-color;
@@ -15,22 +19,14 @@ h2.advantages__slogan  {
 
 .dvantages__list-wrapper {
   padding-top: 85px;
-  background: $bg-color url('../img/bg-triangle-white1.svg') no-repeat top;
+  background: $bg-color url("../img/bg-triangle-white1.svg") no-repeat top;
 }
 
 .advantages__list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  }
-
-.advantages__header {
-  font-size: $font-size-medium;
-  line-height: $line-height-sm;
-  color: $primary-color;
-  font-weight: 600;
-  margin-bottom: 15px;
-  }
+}
 
 .advantages__text {
   font-size: $font-size-base;
@@ -39,6 +35,4 @@ h2.advantages__slogan  {
   font-weight: 400;
   margin-bottom: 35px;
   text-align: center;
-
 }
-
