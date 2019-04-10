@@ -1,0 +1,51 @@
+.operating-systems {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.operating-systems__link {
+  margin-top: 28px;
+  margin-bottom: 30px;
+}
+
+.operating-systems__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 280px;
+  margin-bottom: 25px;
+  /* height: 60px;
+  list-style: none; */
+}
+
+.operating-systems__item--apple {
+  width: 46px;
+  height: 57px;
+  background: url("../img/logo-apple.svg") no-repeat;
+}
+
+.operating-systems__item--android {
+  width: 42px;
+  height: 57px;
+  background: url("../img/logo-android.svg") no-repeat;
+}
+
+.operating-systems__item--windows {
+  width: 44px;
+  height: 42px;
+  background: url("../img/logo-microsoft.svg") no-repeat;
+}
+
+.operating-systems__text {
+  display: block;
+  width: 280px;
+  text-align: center;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  font-weight: 300;
+  color: $second-color;
+  margin-bottom: 30px;
+}

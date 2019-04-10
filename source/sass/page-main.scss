@@ -1,0 +1,15 @@
+.page-main__header {
+  background: $primary-color url("../img/bg-back-mobile@1x.jpg") no-repeat;
+}
+
+.page-main__title {
+  display: block;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 35px;
+  padding-bottom: 85px;
+  font-size: $font-size-large;
+  font-weight: 300;
+  text-align: center;
+  color: $second-color;
+}

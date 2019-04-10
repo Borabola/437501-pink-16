@@ -1,0 +1,38 @@
+.advantages__header {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  font-size: $font-size-medium;
+  line-height: $line-height-sm;
+  color: $primary-color;
+  font-weight: 600;
+  text-align: center;
+}
+
+h2.advantages__slogan {
+  font-size: $font-size-large;
+  line-height: $line-height-base;
+  color: $primary-color;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+
+.dvantages__list-wrapper {
+  padding-top: 85px;
+  background: $bg-color url("../img/bg-triangle-white1.svg") no-repeat top;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages__text {
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $primary-color;
+  font-weight: 400;
+  margin-bottom: 35px;
+  text-align: center;
+}

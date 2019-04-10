@@ -1,0 +1,30 @@
+.page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.page-footer__logo {
+  width: 146px;
+  margin: 35px auto;
+}
+
+.page-footer__social {
+  width: 180px;
+  margin: 0 auto 35px auto;
+}
+
+.page-footer__copyright {
+  width: 140px;
+  margin: 0 auto;
+  font-size: $font-size-base;
+  line-height: $line-height-med;
+  font-weight: 400;
+  color: $primary-color;
+  padding: 0 50px;
+}
+
+.page-footer__htmlacademy {
+  display: inline-block;
+  vertical-align: middle;
+}
