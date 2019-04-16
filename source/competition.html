@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Конкурс «Pink»</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -79,6 +80,28 @@
     </div>
 
   </footer>
+  <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+      var pageHeaderClear = document.querySelector('.page-header');
+      var downloads = document.querySelector('.downloads');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function () {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+          pageHeaderClear.classList.remove('page-header--clear');
+          downloads.classList.remove('downloads--clear');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+          pageHeaderClear.classList.add('page-header--clear');
+          downloads.classList.add('downloads--clear');
+        }
+      });
+    </script>
 </body>
 
 </html>

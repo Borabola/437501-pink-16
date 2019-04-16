@@ -1,19 +1,31 @@
 /*----- Основные цвета -----*/
 $primary-color: rgb(40, 54, 69);
-$second-color: #ffffff;
-$highlight-color: #d22856;
+$second-color: rgba(255, 255, 255, 1);
+$second-color-active: rgba(255, 255, 255, 0.3);
+$highlight-color: rgba(210, 40, 86, 1);
+$highlight-color-active: rgba(210, 40, 86, 0.3);
 $bg-color: #f2f2f2;
-
+$bg-menu-desktop: rgba(178, 178, 178, 0.3);
 
 /*----- Текст -----*/
 $font-main: "Open Sans";
+$font-size-title-desktop: 50px;
+$font-size-title: 40px;
+$font-size-adv: 30px;
 $font-size-large: 24px;
 $font-size-medium: 18px;
 $font-size-base: 14px;
 $font-size-sm: 12px;
 
+$line-height-title-desktop: 60px;
+$line-height-title: 40px;
 $line-height-base: 24px;
 $line-height-sm: 10px;
 $line-height-med: 18px;
 $line-height-large: 30px;
 $line-height-nav: 32px;
+
+/*----- Размеры экранов -----*/
+$mobile-width: 320px;
+$tablet-width: 660px;
+$desktop-width: 960px;

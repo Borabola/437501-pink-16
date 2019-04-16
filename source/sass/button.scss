@@ -9,3 +9,9 @@
   border-radius: 25px;
   box-shadow: 0 0 0 3px #ffffff;
 }
+
+@media (min-width: $tablet-width) {
+  .button {
+  padding: 15px 45px;
+  }
+}

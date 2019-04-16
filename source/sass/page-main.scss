@@ -1,6 +1,10 @@
 .page-main__header {
   background: $primary-color url("../img/bg-back-mobile@1x.jpg") no-repeat;
 }
+.page-main__header--clear {
+  margin-top: -110px;
+}
+
 
 .page-main__title {
   display: block;
@@ -12,4 +16,8 @@
   font-weight: 300;
   text-align: center;
   color: $second-color;
+}
+
+.page-main__title--clear {
+  padding-top: 145px;
 }
