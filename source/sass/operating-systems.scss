@@ -4,7 +4,6 @@
   justify-content: space-around;
   align-items: center;
   background-color: $primary-color;
-
 }
 
 .operating-systems__link {
@@ -48,9 +47,7 @@
   line-height: $line-height-title;
   font-weight: 200;
   color: $second-color;
-
 }
-
 
 .operating-systems__text {
   display: block;
@@ -62,14 +59,15 @@
   color: $second-color;
   margin-bottom: 30px;
 }
+
 @media (min-width: $tablet-width) {
   .operating-systems {
     width: 300px;
     background-color: transparent;
     margin-top: 95px;
     order: 2;
-
   }
+
   .operating-systems-title {
     display: block;
     width: 200px;
@@ -77,14 +75,12 @@
 
   .operating-systems__text {
     width: 300px;
-  }
-
-  .operating-systems__text {
     font-size: $font-size-medium;
     line-height: $line-height-base;
     margin-bottom: 115px;
+  }
 }
-}
+
 @media (min-width: $desktop-width) {
   .operating-systems {
     margin-top: 220px;

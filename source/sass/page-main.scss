@@ -1,6 +1,8 @@
 .page-main__header {
-  background: $primary-color url("../img/bg-back-mobile@1x.jpg") no-repeat;
+  background: $primary-color url("../img/bg-back-mobile@1x.jpg") no-repeat center center;
+  background-size: cover;
 }
+
 .page-main__header--clear {
   margin-top: -110px;
 }
@@ -13,11 +15,34 @@
   padding-top: 35px;
   padding-bottom: 85px;
   font-size: $font-size-large;
-  font-weight: 300;
+  font-weight: 200;
   text-align: center;
   color: $second-color;
 }
 
 .page-main__title--clear {
   padding-top: 145px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    font-size: $font-size-title-desktop;
+    line-height: $line-height-title-tablet;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 80px;
+    padding-bottom: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__title {
+    display: block;
+    width: 345px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 80px;
+    padding-bottom: 200px;
+  }
 }

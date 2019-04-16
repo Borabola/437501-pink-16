@@ -1,7 +1,16 @@
+.panorama {
+  display: block;
+  width: 100%;
+}
+
+.panorama__img {
+  width: 100%;
+}
+
 .panorama__inscription {
   background-color: $bg-color;
-  margin: -10px 20px 20px 20px;
-  padding: 35px 17px 25px 17px;
+  margin: -5px 20px 20px 20px;
+  padding: 25px 17px 25px 17px;
 }
 
 .panorama__author {
@@ -41,4 +50,11 @@
   width: 12.5px;
   height: 12px;
   background: url("../img/icon-heart1.svg") no-repeat;
+}
+
+@media (min-width: $desktop-width) {
+  .panorama {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
 }

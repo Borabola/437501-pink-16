@@ -1,6 +1,6 @@
 
 .advantages__header {
- display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -9,7 +9,6 @@
   margin-bottom: 15px;
   padding: 0;
   text-align: center;
-
 }
 
 .advantages__slogan {
@@ -76,7 +75,6 @@
     width: 310px;
     margin-right: 20px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -105,6 +103,7 @@
     width: 900px;
     margin: 0 20px;
   }
+
   .advantages__item {
     display: flex;
     flex-wrap: wrap;
@@ -124,5 +123,4 @@
     line-height: $line-height-large;
     margin-bottom: 35px;
   }
-
 }

@@ -28,3 +28,9 @@
   display: inline-block;
   vertical-align: middle;
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer__copyright {
+    padding: 0;
+  }
+}
