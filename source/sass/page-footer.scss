@@ -30,7 +30,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer {
+    width: $desktop-width;
+    margin: 0 auto;
+  }
+
   .page-footer__copyright {
+    width: 160px;
     padding: 0;
   }
 }

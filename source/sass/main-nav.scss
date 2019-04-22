@@ -18,10 +18,12 @@
   right: 0;
   width: 50px;
   height: 27px;
-  margin: 20px 20px 24px 0;
+  margin: 20px 20px 17px 0;
+  padding: 0;
   border: none;
   background-color: transparent;
   /*background: url("../img/icon-menu-cross.svg") no-repeat; */
+  order: 2;
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -133,8 +135,9 @@
   .main-nav {
     margin: 0;
     padding: 0;
-    width: 650px;
+    width: 701px;
     margin-left: auto;
+    margin-right: 10px;
     padding-top: 45px;
   }
 

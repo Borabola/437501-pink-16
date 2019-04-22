@@ -68,6 +68,15 @@
     order: 2;
   }
 
+  .operating-systems__link {
+    margin-top: 34px;
+    margin-bottom: 45px;
+  }
+
+  .operating-systems__list {
+    margin-bottom: 35px;
+  }
+
   .operating-systems-title {
     display: block;
     width: 200px;
@@ -84,6 +93,15 @@
 @media (min-width: $desktop-width) {
   .operating-systems {
     margin-top: 220px;
+  }
+
+  .operating-systems__link {
+    margin-top: 60px;
+    margin-bottom: 63px;
+  }
+
+  .operating-systems__list {
+    margin-bottom: 52px;
   }
 
   .operating-systems-title {

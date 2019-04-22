@@ -25,12 +25,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-main__header--clear {
+    margin-top: -110px;
+  }
+
   .page-main__title {
     font-size: $font-size-title-desktop;
     line-height: $line-height-title-tablet;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 80px;
+    padding-top: 190px;
     padding-bottom: 200px;
   }
 }
@@ -42,7 +46,7 @@
     margin: 0 auto;
     padding-left: 30px;
     padding-right: 20px;
-    padding-top: 80px;
+    padding-top: 184px;
     padding-bottom: 200px;
   }
 }
