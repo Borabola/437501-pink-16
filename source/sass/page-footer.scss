@@ -42,6 +42,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0 20px;
     margin-top: 35px;
   }
 
@@ -69,8 +70,9 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    width: $desktop-width;
+    width: 940px;
     margin: 0 auto;
+    padding: 0 10px;
   }
 
   .page-footer__copyright {

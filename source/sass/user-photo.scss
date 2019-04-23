@@ -21,6 +21,10 @@
   padding: 0 20px;
 }
 
+.user-photo__list li {
+  display: flex;
+}
+
 @media (min-width: $tablet-width) {
   .user-photo__list {
     justify-content: space-between;
