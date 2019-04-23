@@ -94,7 +94,10 @@
 
 @media (min-width: $desktop-width) {
   .advantages__list-cover {
-    background-image: linear-gradient (to bottom, $second-color 85px, $bg-color 85px);
+    background-image: linear-gradient(to bottom, $second-color 85px, $bg-color 85px);
+    /*background: $bg-color;
+    width: 100%;
+    margin-top: 85px;*/
   }
 
   .advantages__list-wrapper {

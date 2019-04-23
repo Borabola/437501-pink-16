@@ -16,13 +16,14 @@
 
 .user-photo__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 0 20px;
 }
 
 @media (min-width: $tablet-width) {
   .user-photo__list {
+    justify-content: space-between;
     width: 620px;
     margin: 0 auto;
   }
@@ -38,7 +39,7 @@
 
 @media (min-width: $desktop-width) {
   .user-photo__list {
-    width: 960px;
+    width: 940px;
     margin: 0 auto;
   }
 
