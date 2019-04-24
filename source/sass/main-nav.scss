@@ -144,4 +144,16 @@
   .main-nav__toggle {
     display: none;
   }
+
+  .main-nav--opened .site-list {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    list-style: none;
+  }
+
+  .main-nav--opened .site-list__item {
+    padding: 0;
+    border: none;
+  }
 }
