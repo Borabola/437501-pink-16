@@ -10,16 +10,13 @@
   border: none;
 }
 
-/*.page-header__wrapper {
-  border-bottom: 1px solid #000001;
-} */
-
 .page-header__wrapper a {
   margin: 0;
   padding: 0;
 }
 
 .page-header__line {
+  display: block;
   border-bottom: 1px solid #000001;
 }
 

@@ -5,6 +5,7 @@
 
 .page-main__header--clear {
   margin-top: -110px;
+  padding-top: 145px;
 }
 
 
@@ -20,9 +21,9 @@
   color: $second-color;
 }
 
-.page-main__title--clear {
+/*.page-main__title--clear {
   padding-top: 145px;
-}
+}*/
 
 @media (min-width: $tablet-width) {
   .page-main__header--clear {
