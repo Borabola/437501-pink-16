@@ -1,25 +1,19 @@
 @import "normalize";
-@import "visually-hidden";
 @import "variables";
-@import "fonts";
+@import "scaffolding";
 @import "page-header";
+@import "main-nav";
 @import "site-list";
 @import "downloads";
 @import "operating-systems";
 @import "button";
 @import "advantages";
 @import "phones";
+@import "research";
 @import "page-main";
 @import "user-photo";
 @import "panorama";
 @import "photo";
 @import "page-footer";
 @import "social";
-
-body {
-  margin: 0 auto;
-  padding: 0;
-  width: 320px;
-  font-family: "OpenSans", sans-serif;
-  color: $primary-color;
-}
+/*@import "mixins";*/

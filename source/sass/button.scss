@@ -9,3 +9,18 @@
   border-radius: 25px;
   box-shadow: 0 0 0 3px #ffffff;
 }
+
+@media (min-width: $tablet-width) {
+  .button {
+    padding: 15px 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    width: 237px;
+    font-size: $font-size-btn-desktop;
+    line-height: $line-height-med;
+    padding: 17px 29px;
+  }
+}

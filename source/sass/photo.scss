@@ -1,3 +1,9 @@
+.photo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+}
+
 .photo__img {
   width: 280px;
   margin: 0 auto;
@@ -5,8 +11,8 @@
 
 .photo__inscription {
   width: 246px;
-  margin: -10px 0 20px 0;
-  padding: 35px 17px 25px 17px;
+  margin: 0 0 20px 0;
+  padding: 25px 17px 25px 17px;
   background-color: $bg-color;
 }
 
@@ -47,4 +53,14 @@
   width: 12.5px;
   height: 12px;
   background: url("../img/icon-heart1.svg") no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .photo__like {
+    padding-left: 0;
+  }
+
+  .photo__like::before {
+    left: 230px;
+  }
 }

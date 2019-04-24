@@ -1,6 +1,6 @@
 .user-photo {
-  display: flex;
-  flex-direction: column;
+  display: block;
+  margin: 0 auto;
 }
 
 .user-photo__subtitle {
@@ -16,7 +16,40 @@
 
 .user-photo__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 0 20px;
+}
+
+.user-photo__list li {
+  display: flex;
+}
+
+@media (min-width: $tablet-width) {
+  .user-photo__list {
+    justify-content: space-between;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .user-photo__subtitle {
+    font-size: $line-height-med;
+    padding-top: 53px;
+    padding-bottom: 58px;
+    padding-left: 52px;
+    padding-right: 52px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-photo__list {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .user-photo__subtitle {
+    display: block;
+    width: 509px;
+    margin: 0 auto;
+  }
 }

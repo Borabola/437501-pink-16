@@ -1,0 +1,112 @@
+.research {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .research {
+    display: block;
+  }
+
+  .research__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: $tablet-width;
+    margin: 0 auto;
+    padding-bottom: 130px;
+  }
+
+  .research__timer {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 220px;
+    height: 220px;
+    margin-top: 70px;
+    margin-left: 40px;
+    margin-right: 60px;
+
+    font-size: 120px;
+    line-height: 187px;
+    font-weight: 600;
+    color: $highlight-color;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -86px;
+      left: -39px;
+      width: 298px;
+      height: 345px;
+      /*border: 70px solid (0, 0, 0, 0.1)
+      border-image-source: url("../img/icon-timer1.svg");
+      border-image-slice: 200 149 149 149;
+      border-image-repeat: stretch;*/
+      background: url("../img/icon-timer1.svg") no-repeat;
+      background-clip: content-box;
+      z-index: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 220px;
+      height: 220px;
+      margin-top: -17px;
+      margin-left: -17px;
+      border: 17px solid $highlight-color;
+      border-radius: 50%;
+      z-index: 2;
+    }
+  }
+
+  .research__fact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 320px;
+  }
+
+  .research__title {
+    font-size: $font-size-adv;
+    line-height: $line-height-large;
+    font-weight: 600;
+    margin-top: 43px;
+    margin-bottom: 23px;
+  }
+
+  .research__text {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 18px;
+    padding: 0;
+  }
+
+  .research-link {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    color: $highlight-color;
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .research {
+    background-color: $bg-color;
+  }
+
+  .research__wrapper {
+    width: $desktop-width;
+    padding-bottom: 130px;
+  }
+
+  .research__fact {
+    width: 572px;
+  }
+}

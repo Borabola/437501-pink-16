@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  background-color: $primary-color;
 }
 
 .operating-systems__link {
@@ -39,13 +40,73 @@
   background: url("../img/logo-microsoft.svg") no-repeat;
 }
 
+.operating-systems__title {
+  display: none;
+  text-align: center;
+  font-size: $font-size-title;
+  line-height: $line-height-title;
+  font-weight: 200;
+  color: $second-color;
+}
+
 .operating-systems__text {
   display: block;
   width: 280px;
   text-align: center;
   font-size: $font-size-base;
   line-height: $line-height-base;
-  font-weight: 300;
+  font-weight: 200;
   color: $second-color;
   margin-bottom: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .operating-systems {
+    width: 300px;
+    background-color: transparent;
+    margin-top: 95px;
+    order: 2;
+  }
+
+  .operating-systems__link {
+    margin-top: 34px;
+    margin-bottom: 45px;
+  }
+
+  .operating-systems__list {
+    margin-bottom: 35px;
+  }
+
+  .operating-systems__title {
+    display: block;
+    width: 200px;
+  }
+
+  .operating-systems__text {
+    width: 300px;
+    font-size: $font-size-medium;
+    line-height: $line-height-base;
+    margin-bottom: 115px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .operating-systems {
+    margin-top: 220px;
+  }
+
+  .operating-systems__link {
+    margin-top: 60px;
+    margin-bottom: 63px;
+  }
+
+  .operating-systems__list {
+    margin-bottom: 52px;
+  }
+
+  .operating-systems__title {
+    width: 215px;
+    font-size: $font-size-title-desktop;
+    line-height: $line-height-title-desktop;
+  }
 }
