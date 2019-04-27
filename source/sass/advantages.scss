@@ -6,7 +6,7 @@
   align-items: center;
   width: 210px;
   margin: 0 auto;
-  margin-bottom: 15px;
+  /*margin-bottom: 15px;*/
   padding: 0;
   text-align: center;
 }
@@ -14,19 +14,19 @@
 .advantages__slogan {
   padding: 0;
   font-size: $font-size-large;
-  line-height: $line-height-base;
+  line-height: 29px;
   color: $primary-color;
   font-weight: 200;
-  margin-bottom: 32px;
+  margin-bottom: 29px;
 }
 
 .advantages__list-cover {
-  background: $bg-color url("../img/bg-triangle-white1.svg") no-repeat 50% -350px;
+  background: $bg-color url("../img/bg-triangle-white1.svg") no-repeat 50% -390px;
   background-size: cover;
 }
 
 .advantages__list-wrapper {
-  padding-top: 85px;
+  padding-top: 76px;
   /*background-image: linear-gradient(to bottom, -5deg, $second-color 100px, $bg-color 100px);
   background-position: 50% 0;
   background-size: cover;*/
@@ -38,6 +38,8 @@
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
+
+  margin-bottom: 18px;
 }
 
 .advantages__title {
@@ -47,6 +49,7 @@
   font-weight: 600;
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 15px;
 }
 
 .advantages__text {
@@ -54,7 +57,7 @@
   line-height: $line-height-base;
   color: $primary-color;
   font-weight: 400;
-  margin-bottom: 35px;
+  margin-bottom: 22px;
   padding: 0 20px;
   text-align: center;
 }
@@ -67,12 +70,14 @@
   .advantages__slogan {
     font-size: $font-size-title;
     line-height: $line-height-title;
+    margin-bottom: 10px;
   }
 
   .advantages__slogan--narrow {
     width: 340px;
     margin: 0 auto;
     margin-bottom: 40px;
+    line-height: 44px;
   }
 
   .advantages__list-cover {
