@@ -47,11 +47,6 @@
 
 .operating-systems__title {
   display: none;
-  text-align: center;
-  font-size: $font-size-title;
-  line-height: $line-height-title;
-  font-weight: 200;
-  color: $second-color;
 }
 
 .operating-systems__text {
@@ -69,24 +64,28 @@
   .operating-systems {
     width: 300px;
     background-color: transparent;
-    margin-top: 206px;
+    margin-top: 201px;
     order: 2;
-  }
-
-  .operating-systems__link {
-    margin-top: 33px;
-    margin-bottom: 55px;
-  }
-
-  .operating-systems__list {
-    margin-bottom: 29px;
   }
 
   .operating-systems__title {
     display: block;
     width: 200px;
 
+    font-size: $font-size-title;
     line-height: 48px;
+    font-weight: 200;
+    text-align: center;
+    color: $second-color;
+  }
+
+  .operating-systems__link {
+    margin-top: 34px;
+    margin-bottom: 55px;
+  }
+
+  .operating-systems__list {
+    margin-bottom: 29px;
   }
 
   .operating-systems__item--android {
@@ -107,16 +106,16 @@
   }
 
   .operating-systems__link {
-    margin-top: 60px;
-    margin-bottom: 63px;
+    margin-top: 53px;
+    margin-bottom: 77px;
   }
 
   .operating-systems__list {
-    margin-bottom: 52px;
+    margin-bottom: 49px;
   }
 
   .operating-systems__title {
-    width: 215px;
+    width: 237px;
     font-size: $font-size-title-desktop;
     line-height: $line-height-title-desktop;
   }

@@ -111,7 +111,7 @@
 }
 
 .main-nav--opened .site-list__item {
-  padding: 15px 0;
+  padding: 15px 0;  /*15px 0 16px 0; для photo.html */
   color: $second-color;
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000001;
@@ -141,10 +141,9 @@
   .main-nav {
     margin: 0;
     padding: 0;
-    width: 701px;
+    width: 622px;
     margin-left: auto;
-    margin-right: 10px;
-    padding-top: 45px;
+    padding-top: 38px;
   }
 
   .main-nav__toggle {
@@ -158,8 +157,14 @@
     list-style: none;
   }
 
+  .main-nav--opened .site-list a {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    text-transform: none;
+  }
+
   .main-nav--opened .site-list__item {
     padding: 0;
-    border: none;
   }
 }

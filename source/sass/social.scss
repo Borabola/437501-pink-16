@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 173px;
+  width: 170px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -37,4 +37,16 @@
 
 .social__link--youtube {
   background: url("../img/icon-youtube1.svg") no-repeat center center;
+}
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    margin-top: 4px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social__list {
+    margin-left: 14px;
+  }
 }

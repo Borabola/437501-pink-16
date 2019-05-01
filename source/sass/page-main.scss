@@ -13,10 +13,12 @@
   display: block;
   padding-left: 80px;
   padding-right: 80px;
-  padding-top: 35px;
-  padding-bottom: 85px;
-  font-size: $font-size-large;
+  padding-top: 29px;
+  padding-bottom: 83px;
+  font-size: $line-height-base;
+  line-height: 29px;
   font-weight: 200;
+  letter-spacing: -1px;
   text-align: center;
   color: $second-color;
 }
@@ -33,10 +35,11 @@
   .page-main__title {
     font-size: $font-size-title-desktop;
     line-height: $line-height-title-tablet;
+    letter-spacing: -2.2px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 190px;
-    padding-bottom: 200px;
+    padding-top: 40px;
+    padding-bottom: 207px;
   }
 }
 
@@ -45,9 +48,8 @@
     display: block;
     width: 345px;
     margin: 0 auto;
-    padding-left: 30px;
-    padding-right: 20px;
-    padding-top: 184px;
-    padding-bottom: 200px;
+    padding: 32px 0 103px 0;
+    line-height: 57px;
+    letter-spacing: 0;
   }
 }

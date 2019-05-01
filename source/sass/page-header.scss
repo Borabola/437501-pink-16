@@ -17,12 +17,13 @@
 
 .page-header__line {
   display: block;
-  min-height: 69px;
+  min-height: 68px;
   background-color: $primary-color;
   border-bottom: 1px solid #000001;
 }
 
 .page-header__line--clear {
+  min-height: 66px;
   border-bottom: none;
   background-color: $bg-menu-desktop;
 }
@@ -73,8 +74,9 @@
 
   .page-header__wrapper {
     display: flex;
-    width: 960px;
+    width: 940px;
     margin: 0 auto;
+    padding: 0 10px;
     border: none;
   }
 
@@ -83,8 +85,11 @@
   }
 
   .page-header__logo-image {
+    width: 150px;
+    height: 50px; /* временные размеры */
     margin: 0;
-    padding: 24px 0 40px 0;
+    padding: 0;
+    padding-top: 24px;
   }
 }
 
