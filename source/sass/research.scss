@@ -12,7 +12,7 @@
     justify-content: space-between;
     width: 94%;
     margin: 0 auto;
-    padding: 0 3% 130px 3%;
+    padding: 0 3% 121px 3%;
   }
 
   .research__timer {
@@ -70,7 +70,7 @@
     align-items: flex-start;
     flex-grow: 1;
     width: 300px;
-    padding: 0 10px;
+    padding: 0 10px 0 18px;
   }
 
   .research__title {
@@ -152,7 +152,9 @@
 
   .research__fact {
     width: 585px;
+    margin-left: 50px;
     padding: 0;
+    padding-bottom: 53px;
   }
 
   .research__title {
