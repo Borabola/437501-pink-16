@@ -17,19 +17,30 @@
 
 .page-header__line {
   display: block;
+  min-height: 68px;
+  background-color: $primary-color;
   border-bottom: 1px solid #000001;
 }
 
 .page-header__line--clear {
+  min-height: 66px;
   border-bottom: none;
   background-color: $bg-menu-desktop;
 }
 
-.page-header__logo {
-  width: 95px;
+.page-header__logo svg {
+  /*width: 95px; */
   margin: 0;
-  padding: 0;
-  padding-left: 20px;
+  padding: 20px 0 16px 20px;
+
+  &:focus path,
+  &:hover path {
+    fill: $highlight-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__logo-image {
@@ -41,6 +52,24 @@
   .page-header__wrapper {
     margin: 0 auto;
   }
+
+  .page-header__logo svg {
+    width: 150px;  /*временные размеры лого*/
+    height: 42px;
+    margin: 0;
+    padding: 26px 0 33px 20px;
+  }
+
+  /*.page-header__logo-image {
+    width: 150px;  /*временные размеры лого*/
+  /*height: 42px;
+    margin: 0;
+    padding: 26px 0 33px 20px;
+  }
+
+  .page-header__line {
+    min-height: 108px;
+  }*/
 }
 
 @media (min-width: $desktop-width) {
@@ -60,18 +89,27 @@
 
   .page-header__wrapper {
     display: flex;
-    width: 960px;
+    width: 940px;
     margin: 0 auto;
+    padding: 0 10px;
     border: none;
   }
 
-  .page-header__logo {
+  .page-header__logo svg {
     width: 160px;
+
+    height: 50px; /* временные размеры */
+    margin: 0;
+    padding: 0;
+    padding-top: 24px;
   }
 
   .page-header__logo-image {
+    width: 150px;
+    height: 50px; /* временные размеры */
     margin: 0;
-    padding: 24px 0 40px 0;
+    padding: 0;
+    padding-top: 24px;
   }
 }
 

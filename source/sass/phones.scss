@@ -11,6 +11,10 @@
   margin-left: 20px;
 }
 
+.phones__img {
+  margin-right: 15px;
+}
+
 .phones__item--hidden {
   display: none;
 }
@@ -20,18 +24,32 @@
     /*width: 270px;*/
     margin-right: 30px;
   }
+
+  .phones__img {
+    width: 268px;
+    height: 481px; /*временно- ширина картинки*/
+    margin-right: 15px;
+    margin-top: 15px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .phones__list {
-    width: $desktop-width;
+    width: 940px;
     justify-content: space-between;
     margin-top: -100px;
-    margin-right: 20px;
-    margin-bottom: 55px;
+    margin-bottom: 34px;
+    padding: 0 10px;
   }
 
   .phones__item--hidden {
     display: block;
+  }
+
+  .phones__img {
+    width: 292px;
+    height: 302px; /*временно- ширина картинки*/
+    margin-right: 15px;
+    margin-top: 107px;
   }
 }

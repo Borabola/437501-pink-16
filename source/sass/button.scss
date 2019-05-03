@@ -1,6 +1,6 @@
 .button {
   width: 206px;
-  padding: 15px 37px;
+  padding: 14px 35px 17px 35px;
   font-size: $font-size-medium;
   line-height: $line-height-med;
   font-weight: 600;
@@ -8,11 +8,23 @@
   text-decoration: none;
   border-radius: 25px;
   box-shadow: 0 0 0 3px #ffffff;
+
+  &:hover {
+    font-weight: 400;
+    color: $highlight-color;
+    background-color: $second-color;
+  }
+
+  &:active {
+    font-weight: 400;
+    color: $highlight-color-active;
+    background-color: $second-color;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .button {
-    padding: 15px 45px;
+    padding: 15px 45px 16px 45px;
   }
 }
 
@@ -21,6 +33,6 @@
     width: 237px;
     font-size: $font-size-btn-desktop;
     line-height: $line-height-med;
-    padding: 17px 29px;
+    padding: 15px 30px;
   }
 }

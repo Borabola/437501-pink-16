@@ -7,8 +7,8 @@
 }
 
 .operating-systems__link {
-  margin-top: 28px;
-  margin-bottom: 30px;
+  margin-top: 31px;
+  margin-bottom: 40px;
 }
 
 .operating-systems__list {
@@ -16,8 +16,8 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 280px;
-  margin-bottom: 25px;
+  width: 241px;
+  margin-bottom: 12px;
   /* height: 60px;
   list-style: none; */
 }
@@ -25,28 +25,28 @@
 .operating-systems__item--apple {
   width: 46px;
   height: 57px;
+  margin-top: -13px;
+  margin-left: -1px;
   background: url("../img/logo-apple.svg") no-repeat;
 }
 
 .operating-systems__item--android {
   width: 42px;
   height: 57px;
+  margin-left: -2px;
+  margin-top: 3px;
   background: url("../img/logo-android.svg") no-repeat;
 }
 
 .operating-systems__item--windows {
   width: 44px;
   height: 42px;
+  margin-top: -5px;
   background: url("../img/logo-microsoft.svg") no-repeat;
 }
 
 .operating-systems__title {
   display: none;
-  text-align: center;
-  font-size: $font-size-title;
-  line-height: $line-height-title;
-  font-weight: 200;
-  color: $second-color;
 }
 
 .operating-systems__text {
@@ -64,29 +64,39 @@
   .operating-systems {
     width: 300px;
     background-color: transparent;
-    margin-top: 95px;
+    margin-top: 201px;
     order: 2;
-  }
-
-  .operating-systems__link {
-    margin-top: 34px;
-    margin-bottom: 45px;
-  }
-
-  .operating-systems__list {
-    margin-bottom: 35px;
   }
 
   .operating-systems__title {
     display: block;
     width: 200px;
+
+    font-size: $font-size-title;
+    line-height: 48px;
+    font-weight: 200;
+    text-align: center;
+    color: $second-color;
+  }
+
+  .operating-systems__link {
+    margin-top: 34px;
+    margin-bottom: 55px;
+  }
+
+  .operating-systems__list {
+    margin-bottom: 29px;
+  }
+
+  .operating-systems__item--android {
+    margin-top: 0;
   }
 
   .operating-systems__text {
     width: 300px;
     font-size: $font-size-medium;
     line-height: $line-height-base;
-    margin-bottom: 115px;
+    margin-bottom: 109px;
   }
 }
 
@@ -96,16 +106,16 @@
   }
 
   .operating-systems__link {
-    margin-top: 60px;
-    margin-bottom: 63px;
+    margin-top: 53px;
+    margin-bottom: 77px;
   }
 
   .operating-systems__list {
-    margin-bottom: 52px;
+    margin-bottom: 49px;
   }
 
   .operating-systems__title {
-    width: 215px;
+    width: 237px;
     font-size: $font-size-title-desktop;
     line-height: $line-height-title-desktop;
   }
