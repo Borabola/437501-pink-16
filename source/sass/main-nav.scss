@@ -23,6 +23,7 @@
   border: none;
   background-color: transparent;
   /*background: url("../img/icon-menu-cross.svg") no-repeat; */
+  outline: none;
   order: 2;
 }
 
@@ -166,5 +167,6 @@
 
   .main-nav--opened .site-list__item {
     padding: 0;
+    border: none;
   }
 }

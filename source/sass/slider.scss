@@ -67,17 +67,25 @@
   background-color: #bec2c7;
   border-radius: 50%;
   cursor: pointer;
+
+  &:hover {
+    background-color: #7e868f;
+  }
+
+  &:active {
+    background-color: #e9ebec;
+  }
 }
 
-#product-1:checked ~ .slider #slide1,
-#product-2:checked ~ .slider #slide2,
-#product-3:checked ~ .slider #slide3 {
+.product-1:checked ~ .slider .slide1,
+.product-2:checked ~ .slider .slide2,
+.product-3:checked ~ .slider .slide3 {
   display: block;
 }
 
-#product-1:checked ~ .slider label[for="product-1"],
-#product-2:checked ~ .slider label[for="product-2"],
-#product-3:checked ~ .slider label[for="product-3"] {
+.product-1:checked ~ .slider label[for="product-1"],
+.product-2:checked ~ .slider label[for="product-2"],
+.product-3:checked ~ .slider label[for="product-3"] {
   background: transparent;
   border: 3px solid #283645;
   border-radius: 50%;

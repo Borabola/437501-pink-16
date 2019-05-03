@@ -8,6 +8,18 @@
   text-decoration: none;
   border-radius: 25px;
   box-shadow: 0 0 0 3px #ffffff;
+
+  &:hover {
+    font-weight: 400;
+    color: $highlight-color;
+    background-color: $second-color;
+  }
+
+  &:active {
+    font-weight: 600;
+    color: $highlight-color-active;
+    background-color: $second-color;
+  }
 }
 
 @media (min-width: $tablet-width) {

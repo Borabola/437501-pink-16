@@ -28,11 +28,19 @@
   background-color: $bg-menu-desktop;
 }
 
-.page-header__logo {
+.page-header__logo svg {
   /*width: 95px; */
   margin: 0;
-  padding: 0;
-  padding-left: 20px;
+  padding: 20px 0 16px 20px;
+
+  &:focus path,
+  &:hover path {
+    fill: $highlight-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__logo-image {
@@ -45,14 +53,21 @@
     margin: 0 auto;
   }
 
-  .page-header__logo-image {
+  .page-header__logo svg {
     width: 150px;  /*временные размеры лого*/
     height: 42px;
     margin: 0;
     padding: 26px 0 33px 20px;
   }
 
-  /*.page-header__line {
+  /*.page-header__logo-image {
+    width: 150px;  /*временные размеры лого*/
+  /*height: 42px;
+    margin: 0;
+    padding: 26px 0 33px 20px;
+  }
+
+  .page-header__line {
     min-height: 108px;
   }*/
 }
@@ -80,8 +95,13 @@
     border: none;
   }
 
-  .page-header__logo {
+  .page-header__logo svg {
     width: 160px;
+
+    height: 50px; /* временные размеры */
+    margin: 0;
+    padding: 0;
+    padding-top: 24px;
   }
 
   .page-header__logo-image {

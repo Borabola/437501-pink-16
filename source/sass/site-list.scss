@@ -59,7 +59,19 @@
   }
 
   .site-list__item {
+    position: relative;
     padding: 0;
     border: none;
+
+    &--active::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 31px;
+      height: 2px;
+      width: 100%;
+      display: block;
+      background-color: $second-color;
+    }
   }
 }

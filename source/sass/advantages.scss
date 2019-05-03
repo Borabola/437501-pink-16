@@ -21,7 +21,8 @@
 }
 
 .advantages__list-cover {
-  background: $bg-color url("../img/bg-triangle-white1.svg") no-repeat 50% -395px;
+  background: $bg-color url("../img/bg-triangle-white1.svg") no-repeat;
+  background-position: 50% calc(-445px + 14vw);
   background-size: cover;
 }
 

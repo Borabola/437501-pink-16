@@ -96,6 +96,15 @@
     line-height: $line-height-base;
     color: $highlight-color;
     text-decoration: underline;
+
+    /*&:hover,
+    &:focus {
+      color: $highlight-color-active;
+    }
+
+    &:active {
+      color: $highlight-color;
+    } */
   }
 }
 
