@@ -77,6 +77,19 @@
   .page-footer__htmlacademy {
     margin-left: 12px;
     margin-top: 2px;
+
+    & path {
+      fill: #d22856;
+    }
+
+    &:focus path,
+    &:hover path {
+      fill: $primary-color;
+    }
+
+    &:active path {
+      fill: $bg-menu-desktop;
+    }
   }
 }
 

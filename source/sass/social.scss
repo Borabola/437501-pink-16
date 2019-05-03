@@ -25,6 +25,16 @@
   vertical-align: middle;
   box-shadow: 0 0 0 3px rgba(233, 235, 236, 1);
   border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 0 3px $primary-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+    box-shadow: 0 0 0 3px rgba(233, 235, 236, 1);
+  }
 }
 
 .social__link--twitter {
