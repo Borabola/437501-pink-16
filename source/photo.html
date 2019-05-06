@@ -13,10 +13,21 @@
     <div class="page-header__wrapper">
       <div class="page-header__line">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
-          alt="Фотоприложение «Pink»">
+          <svg enable-background="new 0 0 74.426 22.859" height="22.859" viewBox="0 0 74.426 22.859" width="74.426"
+            xmlns="http://www.w3.org/2000/svg">
+            <g fill="#fff">
+              <path
+                d="m0 1.449c0-.708.58-1.288 1.256-1.288h7.18c5.087 0 8.436 2.704 8.436 7.147v.064c0 4.861-4.057 7.373-8.854 7.373h-5.474v6.825c0 .708-.58 1.288-1.288 1.288-.676.001-1.256-.579-1.256-1.287zm8.114 10.979c3.734 0 6.182-1.996 6.182-4.958v-.065c0-3.22-2.415-4.894-6.054-4.894h-5.698v9.917z" />
+              <path
+                d="m21.729 1.288c0-.708.579-1.288 1.254-1.288.709 0 1.288.58 1.288 1.288v20.283c0 .708-.579 1.288-1.288 1.288-.676 0-1.255-.58-1.255-1.288v-20.283z" />
+              <path
+                d="m30.87 1.32c0-.676.579-1.256 1.256-1.256h.354c.58 0 .934.29 1.288.74l13.684 17.45v-16.998c-.001-.676.546-1.256 1.255-1.256.676 0 1.223.58 1.223 1.256v20.348c0 .676-.482 1.191-1.158 1.191h-.129c-.548 0-.934-.322-1.32-.772l-13.974-17.87v17.45c0 .676-.547 1.256-1.255 1.256-.677 0-1.224-.58-1.224-1.256z" />
+              <path
+                d="m56.3 1.288c0-.708.579-1.288 1.256-1.288.708 0 1.287.58 1.287 1.288v12.331l12.846-13.168c.29-.258.58-.451.999-.451.676 0 1.224.612 1.224 1.256 0 .354-.161.644-.419.901l-7.984 7.92 8.564 10.561c.225.29.354.547.354.934 0 .676-.579 1.288-1.287 1.288-.483 0-.806-.258-1.03-.58l-8.403-10.463-4.862 4.861v4.894c0 .708-.579 1.288-1.287 1.288-.677 0-1.256-.58-1.256-1.288v-20.284z" />
+            </g>
+          </svg>
         </a>
-        </div>
+      </div>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list site-list">
@@ -45,7 +56,12 @@
         Видите, как не хватает ваших?</p>
       <article class="panorama">
         <h3 class="visually-hidden">Над городом</h3>
-        <img class="panorama__img" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Вид с моста">
+        <picture>
+          <source media="(min-width:960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+          <source media="(min-width:660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+          <img class="panorama__img" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x"
+            alt="Вид с моста">
+        </picture>
         <div class="panorama__inscription">
           <p class="panorama__author">Анна <time class="user-photo__time" title="4 апреля 2019 11:55"
               datetime="2019-04-04 11:55">&nbsp;(5 МИНУТ НАЗАД)</time></p>
@@ -59,7 +75,13 @@
         <li>
           <article class="photo">
             <h3 class="visually-hidden">Белая машина</h3>
-            <img class="photo__img" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Белая машина">
+            <picture>
+              <source media="(min-width:960px)"
+                srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+              <img class="photo__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x"
+                alt="Белая машина">
+            </picture>
             <div class="photo__inscription">
               <p class="photo__author">Левон <time class="photo__time" title="4 апреля 2019 7:00"
                   datetime="2019-04-02 07:00">&nbsp;(5 ЧАСОВ НАЗАД)</time></p>
@@ -71,7 +93,14 @@
         <li>
           <article class="photo">
             <h3 class="visually-hidden">Барабаны</h3>
-            <img class="photo__img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Барабаны">
+            <picture>
+              <source media="(min-width:960px)"
+                srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)"
+                srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+              <img class="photo__img" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x"
+                alt="Барабаны">
+            </picture>
             <div class="photo__inscription">
               <p class="photo__author">Антон <time class="photo__time" title="4 апреля 2019 0:00"
                   datetime="2019-04-02 00:00">&nbsp;(12 ЧАСОВ НАЗАД)</time></p>
@@ -83,7 +112,14 @@
         <li>
           <article class="photo">
             <h3 class="visually-hidden">Окна</h3>
-            <img class="photo__img" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Окна">
+            <picture>
+              <source media="(min-width:960px)"
+                srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)"
+                srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+              <img class="photo__img" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x"
+                width="280" height="180" alt="Окна">
+            </picture>
             <div class="photo__inscription">
               <p class="photo__author">Борис <time class="photo__time" title="3 апреля 2019 4:00"
                   datetime="2019-04-03 04:00">&nbsp;(12 ЧАСОВ НАЗАД)</time></p>
@@ -95,7 +131,14 @@
         <li>
           <article class="photo">
             <h3 class="visually-hidden">Кубанская бахча</h3>
-            <img class="photo__img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Кубанская бахча">
+            <picture>
+              <source media="(min-width:960px)"
+                srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)"
+                srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+              <img class="photo__img" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x"
+                width="280" height="180" alt="Кубанская бахча">
+            </picture>
             <div class="photo__inscription">
               <p class="photo__author">Сергей <time class="photo__time" title="3 апреля 2019 11:00"
                   datetime="2019-04-03 11:00">&nbsp;(25 ЧАСОВ НАЗАД)</time></p>
@@ -107,7 +150,13 @@
         <li>
           <article class="photo">
             <h3 class="visually-hidden">Вид с горы</h3>
-            <img class="photo__img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Вид с горы">
+            <picture>
+              <source media="(min-width:960px)"
+                srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+              <img class="photo__img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x"
+                width="280" height="180" alt="Вид с горы">
+            </picture>
             <div class="photo__inscription">
               <p class="photo__author">Максим<time class="photo__time" title="2 апреля 2019 11:00"
                   datetime="2019-04-02 20:00">&nbsp;(40 ЧАСОВ НАЗАД)</time></p>
@@ -119,7 +168,14 @@
         <li>
           <article class="photo">
             <h3 class="visually-hidden">Крыло самолета</h3>
-            <img class="photo__img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Крыло самолета">
+            <picture>
+              <source media="(min-width:960px)"
+                srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width:660px)"
+                srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+              <img class="photo__img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x"
+                width="280" height="180" alt="Крыло самолета">
+            </picture>
             <div class="photo__inscription">
               <p class="photo__author">Надежда <time class="photo__time" title="2 апреля 2019 15:00"
                   datetime="2019-04-02 15:00">&nbsp;(45 ЧАСОВ НАЗАД)</time></p>
@@ -173,6 +229,7 @@
 
   </footer>
   <script src="js/pink.js"></script>
+  <script src="js/picturefill.min.js"></script>
 </body>
 
 </html>
