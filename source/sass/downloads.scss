@@ -5,7 +5,12 @@
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: calc(50% - 31px) 108px, 50% -68px;
-  background-size: auto, contain;
+  background-size: 258px auto, contain;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .downloads--clear {
@@ -16,7 +21,7 @@
 
 @media (min-width: 463px) {
   .downloads {
-    background-size: auto, cover;
+    background-size: 258px auto, cover;
   }
 }
 
@@ -53,11 +58,11 @@
   }
 }
 
-@media (min-width: 463px) {
+/*@media (min-width: 463px) {
   .downloads {
-    background-size: auto, cover;
+    background-size: 258px auto, cover;
   }
-}
+}*/
 
 @media (min-width: $tablet-width) {
   .downloads {
@@ -66,7 +71,12 @@
     margin-bottom: 55px;
     background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
     background-position: 50% 185px, 50% 0;
-    background-size: auto, cover;
+    background-size: 700px auto, cover;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
+    }
   }
 
   .downloads--clear {
@@ -74,7 +84,7 @@
     margin-top: -110px;
     margin-bottom: 52px;
     background-position: 50%  185px, 50% 0;
-    background-size: auto, cover;
+    background-size: 700px auto, cover;
   }
 
   .downloads__img-wrapper {
@@ -105,6 +115,12 @@
     margin-bottom: 67px;
     background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
     background-position: calc(50% + 70px) bottom, 50% 50%;
+    background-size: 1050px auto, cover;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 
   .downloads__img-wrapper {
