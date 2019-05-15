@@ -147,7 +147,18 @@
       top: 28px;
       width: 22px;
       height: 42px;
+      padding: 20px;
       background: url("../img/icon-review-arrow-left1.svg") no-repeat;
+      opacity: 0.3;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.1;
+      }
     }
 
     &::after {
@@ -158,6 +169,15 @@
       width: 22px;
       height: 42px;
       background: url("../img/icon-review-arrow-right1.svg") no-repeat;
+      opacity: 0.3;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.1;
+      }
     }
   }
 
