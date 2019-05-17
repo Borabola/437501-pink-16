@@ -125,7 +125,7 @@
   }
 
   .advantages__list-wrapper {
-    width: $desktop-width;
+    width: 1000px;
     margin: 0 auto;
     flex-direction: column-reverse;
   }
@@ -149,6 +149,7 @@
     flex-wrap: wrap;
     width: 900px;
     margin: 0;
+    margin-left: 13px;
     padding: 0 30px;
   }
 
@@ -163,10 +164,12 @@
     align-items: flex-start;
     justify-content: center;
     width: 241px;
+    margin-right: 0;
   }
 
   .advantages__title {
     max-width: 224px;
+    margin-top: 14px;
     margin-bottom: 24px;
     font-size: $font-size-adv;
     line-height: $line-height-large;

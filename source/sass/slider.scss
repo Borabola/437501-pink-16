@@ -30,6 +30,11 @@
   display: none;
 }
 
+.slider__arrow-left,
+.slider__arrow-right {
+  display: none;
+}
+
 .slider__author {
   margin-bottom: 13px;
   font-size: $font-size-medium;
@@ -121,8 +126,59 @@
 }
 
 @media (min-width: $desktop-width) {
+  .slider__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .slider__arrow-left {
+    display: block;
+    width: 22px;
+    margin: 0;
+    padding: 0;
+    background: url("../img/icon-review-arrow-left1.svg") no-repeat 0 calc(50% + 10px);
+    border: none;
+    opacity: 0.3;
+
+    &:hover {
+      outline: none;
+      opacity: 0.6;
+    }
+
+    &:active {
+      outline: none;
+      opacity: 0.1;
+    }
+  }
+
+  button.slider__arrow-right {
+    display: block;
+    width: 22px;
+    margin: 0;
+    padding: 0;
+    background: url("../img/icon-review-arrow-right1.svg") no-repeat 0 calc(50% + 10px);
+    border: none;
+    opacity: 0.3;
+
+    &:hover {
+      outline: none;
+      opacity: 0.6;
+    }
+
+    &:active {
+      outline: none;
+      opacity: 0.1;
+    }
+  }
+
   .slider__list {
     margin-top: 143px;
+    order: 0;
 
     &::before {
       content: "";
@@ -139,46 +195,7 @@
     width: 700px;
     margin: 0 auto;
     margin-bottom: 35px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: calc(50% - 470px);
-      top: 28px;
-      width: 22px;
-      height: 42px;
-      padding: 20px;
-      background: url("../img/icon-review-arrow-left1.svg") no-repeat;
-      opacity: 0.3;
-      cursor: pointer;
-
-      &:hover {
-        opacity: 0.6;
-      }
-
-      &:active {
-        opacity: 0.1;
-      }
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      right: calc(50% - 470px);
-      top: 28px;
-      width: 22px;
-      height: 42px;
-      background: url("../img/icon-review-arrow-right1.svg") no-repeat;
-      opacity: 0.3;
-
-      &:hover {
-        opacity: 0.6;
-      }
-
-      &:active {
-        opacity: 0.1;
-      }
-    }
+    letter-spacing: 0.4px;
   }
 
   .slider__author {
