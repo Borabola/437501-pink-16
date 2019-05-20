@@ -1,0 +1,20 @@
+.tariff__table {
+  width: 620px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.tariff__item-hidden {
+  background: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: 2px solid #e7e7e7;
+}
+
+.tariff__item-heading {
+  width: 280px;
+  font-size: 16px;
+  line-height: $line-height-large;
+  color: $second-color;
+  background-color: $primary-color;
+}

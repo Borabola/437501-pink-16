@@ -20,11 +20,46 @@
     color: $highlight-color-active;
     background-color: $second-color;
   }
+
+  &--competition {
+    width: 100%;
+    margin-bottom: 34px;
+    padding: 24px 35px 22px 35px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    border-radius: 1px;
+    border: 0;
+    box-shadow: none;
+    background-color: #2aab6d;
+
+    &:hover {
+      color: $second-color;
+      font-weight: 600;
+      background-color: #1c9b5e;
+    }
+
+    &:active {
+      outline: none;
+      font-weight: 600;
+      color: #65b389;
+      background-color: #1c9b5e;
+    }
+
+    &:disabled {
+      color: $second-color;
+      background-color: #e5e5e5;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
   .button {
     padding: 15px 45px 16px 45px;
+
+    &--competition {
+      width: auto;
+      padding: 23px 57px 21px 56px;
+    }
   }
 }
 
@@ -34,5 +69,15 @@
     font-size: $font-size-btn-desktop;
     line-height: $line-height-med;
     padding: 15px 30px;
+
+    &--competition {
+      box-sizing: border-box;
+      width: 300px;
+      margin: 0;
+      padding: 19px 57px 15px 56px;
+
+      font-size: $font-size-medium;
+      line-height: $line-height-large;
+    }
   }
 }

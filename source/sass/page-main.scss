@@ -14,7 +14,8 @@
 .page-main__header--clear {
   margin-top: -110px;
   padding-top: 145px;
-  background-position: 50% 40px;
+  background-color: $primary-color;
+  background-position: 50% 10px;
 }
 
 
@@ -30,6 +31,14 @@
   letter-spacing: -1px;
   text-align: center;
   color: $second-color;
+
+  &--competition {
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 30px;
+    padding-bottom: 52px;
+    letter-spacing: 0;
+  }
 }
 
 /*.page-main__title--clear {
@@ -58,6 +67,15 @@
     padding-right: 20px;
     padding-top: 40px;
     padding-bottom: 207px;
+
+    &--competition {
+      line-height: 60px;
+      padding-left: 45px;
+      padding-right: 45px;
+      padding-top: 70px;
+      padding-bottom: 79px;
+      letter-spacing: 0;
+    }
   }
 }
 
@@ -78,5 +96,9 @@
     padding: 32px 0 103px 0;
     line-height: 57px;
     letter-spacing: 0;
+
+    &--competition {
+      width: 750px;
+    }
   }
 }
