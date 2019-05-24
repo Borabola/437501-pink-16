@@ -4,6 +4,7 @@
   justify-content: center;
   text-align: center;
 }
+
 .contacts__title {
   font-size: $font-size-large;
   line-height: $line-height-large;
@@ -90,13 +91,10 @@
     min-width: 435px;
     margin: 65px auto 53px auto;
     padding: 0 200px;
+    order: 1;
 
     font-size: $font-size-title-desktop;
     line-height: $line-height-title-desktop;
-  }
-
-  .contacts__title {
-    order: 1;
   }
 
   .contacts__tel {
@@ -124,7 +122,7 @@
     margin-bottom: 55px;
 
     &--addres {
-    margin-bottom: 0;
+      margin-bottom: 0;
     }
   }
 }

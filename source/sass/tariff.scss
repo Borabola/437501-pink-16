@@ -220,19 +220,19 @@ td.tariff__item-filter,
       height: 73px;
       background: url("../img/bg-hit-tablet.svg") no-repeat top left;
       background-size: 61px 61px;
-      }
+    }
 
-      &::after {
-        content: "хит";
-        position: absolute;
-        top: 0;
-        left: -1px;
-        width: 74px;
-        height: 73px;
-        transform: rotate(-45deg);
-        color: $second-color;
-        text-transform: uppercase;
-      }
+    &::after {
+      content: "хит";
+      position: absolute;
+      top: 0;
+      left: -1px;
+      width: 74px;
+      height: 73px;
+      transform: rotate(-45deg);
+      color: $second-color;
+      text-transform: uppercase;
+    }
 
     & p {
       font-size: $font-size-medium;
@@ -248,7 +248,7 @@ td.tariff__item-filter,
         line-height: $line-height-large;
         font-weight: 600;
       }
-      }
+    }
   }
 
   .tariff__item-check {
@@ -304,15 +304,15 @@ td.tariff__item-filter,
       content: "";
       position: absolute;
       background: url("../img/bg-hit-desktop.svg") no-repeat top left;
-      }
+    }
 
-      &::after {
-        content: "хит";
-        position: absolute;
-        top: 8px;
-        left: 4px;
-        font-size: $font-size-base;
-      }
+    &::after {
+      content: "хит";
+      position: absolute;
+      top: 8px;
+      left: 4px;
+      font-size: $font-size-base;
+    }
 
     & p {
       font-size: $font-size-large;
@@ -327,7 +327,7 @@ td.tariff__item-filter,
         letter-spacing: 1.3px;
         margin-bottom: 2px;
       }
-      }
+    }
   }
 
   td.tariff__item-filter {
@@ -341,4 +341,3 @@ td.tariff__item-filter,
     padding-bottom: 62px;
   }
 }
-
