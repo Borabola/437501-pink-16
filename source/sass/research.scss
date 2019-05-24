@@ -10,7 +10,7 @@
   .research__wrapper {
     display: flex;
     justify-content: space-between;
-    width: 94%;
+    width: 100%;
     margin: 0 auto;
     padding: 0 3% 121px 3%;
   }
@@ -162,7 +162,7 @@
 
   .research__fact {
     width: 585px;
-    margin-left: 50px;
+    margin-left: 55px;
     padding: 0;
     padding-bottom: 53px;
   }
@@ -178,7 +178,7 @@
   .research__text {
     font-size: $font-size-medium;
     line-height: $line-height-large;
-    margin-bottom: 34px;
+    margin-bottom: 32px;
   }
 
   .research-link {

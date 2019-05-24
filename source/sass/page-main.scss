@@ -41,6 +41,14 @@
   }
 }
 
+.page-main__heading {
+  text-align: center;
+  font-size: $font-size-base;
+  line-height: $line-height-large;
+  margin-left: -2px;
+  margin-bottom: 48px;
+}
+
 /*.page-main__title--clear {
   padding-top: 145px;
 }*/
@@ -68,6 +76,16 @@
     padding-top: 40px;
     padding-bottom: 207px;
 
+    &--photo {
+      padding-left: 130px;
+      padding-right: 130px;
+      padding-top: 70px;
+      padding-bottom: 140px;
+
+      line-height: $line-height-title-desktop;
+      letter-spacing: 0.2px;
+    }
+
     &--competition {
       line-height: 60px;
       padding-left: 45px;
@@ -76,6 +94,11 @@
       padding-bottom: 79px;
       letter-spacing: 0;
     }
+  }
+
+  .page-main__heading {
+    font-size: $font-size-medium;
+    margin-bottom: 68px;
   }
 }
 

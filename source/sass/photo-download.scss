@@ -1,0 +1,264 @@
+.photo-download {
+    width: 100%;
+    background-color: $bg-color;
+}
+
+.photo-download__img {
+  display: block;
+  box-sizing: border-box;
+  width: 87.5%;
+  margin: 0 auto 42px;
+  padding: 15px 0 0;
+}
+
+.photo-download__edit {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 62.5%;
+  margin: 0 auto 27px;
+  padding: 0;
+  padding-right: 12px;
+}
+
+.photo-download__edit-svg--crop {
+  margin-top: -2px;
+}
+
+svg.photo-download__edit-svg {
+  fill: $primary-color;
+  opacity: 0.3;
+
+  &--active {
+    fill: $highlight-color;
+    opacity: 1;
+  }
+
+  &--crop {
+    margin-top: -2px;
+  }
+
+  &--contrast {
+    margin-top: 3px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    fill: $highlight-color;
+    opacity: 1;
+  }
+}
+
+.photo-download__edit-range {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  padding-bottom: 34px;
+  border-bottom: 1px solid #dddfe0;
+
+  &--mobile {
+    display: none;
+  }
+}
+
+.photo-download__scale {
+  width: 75%;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 10px;
+  background: $primary-color;
+}
+
+.photo-downloads__toggle {
+  position: absolute;
+  top: -6px;
+  left: 231px;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+
+  border: 2px solid $highlight-color;
+  background-color: $bg-color;
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.photo-download__btn-wrapper {
+  width: 280px;
+  margin: 41px auto 0;
+}
+
+.photo-download__button {
+  width: 97.9%;
+  margin-bottom: 17px;
+  padding: 16px 35px 15px 35px;
+  color: $highlight-color;
+  border: 0;
+  border-radius: 25px;
+  box-shadow: 0 0 0 3px $highlight-color;
+
+  &:hover,
+  &:focus {
+    font-weight: 600;
+    color: $second-color;
+    background-color: $highlight-color;
+  }
+
+  &:active {
+    font-weight: 400;
+    color: $highlight-color-active;
+    background-color: $highlight-color;
+  }
+
+  &--cancel {
+    width: 98%;
+    margin-bottom: 43px;
+    color: rgba(40, 54, 69, 0.1);
+    box-shadow: 0 0 0 3px rgba(40, 54, 69, 0.1);
+
+    &:hover,
+    &:focus {
+      color: rgba(40, 54, 69, 0.3);
+      box-shadow: 0 0 0 3px rgba(40, 54, 69, 0.3);
+      outline: none;
+    }
+
+    &:active {
+      color: rgba(40, 54, 69, 0.1);
+      box-shadow: 0 0 0 3px rgba(40, 54, 69, 0.3);
+      background-color: rgba(40, 54, 69, 0.3);
+      outline: none;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photo-download__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 93.9%;
+    margin: 0 auto;
+
+    & picture {
+      min-width: 300px;
+      width: 50%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      padding-right: 10px;
+    }
+  }
+
+  .photo-download__edit-right {
+    display: flex;
+    flex-direction: column;
+    padding: 57px 0 54px;
+    width: 44.35%;
+  }
+
+  .photo-download__container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .photo-download__edit {
+    display: flex;
+    flex-direction: column;
+    width: 9.8%;
+    min-width: 25px;
+    margin: 0;
+    padding: 0 0 0 2px;
+
+    & li {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      padding-bottom: 9px;
+      border-bottom: 1px solid #dddfe0;
+    }
+  }
+
+  svg.photo-download__edit-svg {
+    width: 9.8%;
+    min-width: 25px;
+    padding-right: 0;
+    fill: $highlight-color;
+    opacity: 1;
+
+    &--fill {
+      margin-top: -2px;
+      margin-bottom: -1px;
+    }
+
+    &--contrast {
+      min-width: 17px;
+      margin-top: 0;
+      margin-left: 5px;
+      padding-bottom: 10px;
+    }
+  }
+
+  .photo-download__edit-container {
+    display: flex;
+    flex-direction: column;
+    width: 90.2%;
+    min-width: 248px;
+  }
+
+  .photo-download__img {
+    min-width: 300px;
+    height: auto;
+    margin: 0;
+    padding: 57px 0 54px;
+  }
+
+  .photo-download__edit-range {
+    position: relative;
+    display: flex;
+    width: 99%;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    padding-top: 9px;
+    padding-bottom: 34px;
+    border-bottom: 1px solid #dddfe0;
+
+    &--mobile {
+      display: block;
+    }
+  }
+
+  .photo-downloads__toggle {
+    position: absolute;
+    top: 12.5px;
+    left: 170px;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+
+    &--fill {
+      left: 52px;
+    }
+
+    &--contrast {
+      left: 70px;
+    }
+  }
+
+  .photo-download__scale {
+      width: 79%;
+      height: 2px;
+      margin: 10px auto 0;
+      padding-left: 7px;
+      background: #283645;
+  }
+}
+
+

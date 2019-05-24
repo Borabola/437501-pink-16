@@ -31,7 +31,7 @@
 .page-header__logo svg {
   /*width: 95px; */
   margin: 0;
-  padding: 20px 0 16px 20px;
+  padding: 20px 0 19px 20px;
 
   /*&:focus path,
   &:hover path {
@@ -80,11 +80,15 @@ svg.page-header__logo-svg {
     margin: 0 auto;
   }
 
+  .page-header__line--clear {
+    min-height: 110px;
+  }
+
   .page-header__logo svg {
     width: 150px;
     height: 42px;
     margin: 0;
-    padding: 26px 0 33px 20px;
+    padding: 26px 0 40px 20px;
   }
 
   .page-header__logo-svg--mobile {

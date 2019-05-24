@@ -17,7 +17,7 @@
   <header class="page-header">
     <div class="page-header__wrapper">
       <div class="page-header__line">
-        <a class="page-header__logo page-header__logo--inner" href="index.html">
+        <a class="page-header__logo" href="index.html">
           <!--<img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22"
                   alt="Фотоприложение «Pink»"> -->
           <svg class="page-header__logo-svg page-header__logo-svg--desktop" enable-background="new 0 0 146.3 40.375"
@@ -55,7 +55,7 @@
   </header>
   <main class="page-main">
     <header class="page-main__header">
-      <h1 class="page-main__title">Фотографии пользователей</h1>
+      <h1 class="page-main__title page-main__title--photo">Фотографии пользователей</h1>
     </header>
     <section class="user-photo">
       <h2 class="visually-hidden">Самые популярные фото</h2>
@@ -216,7 +216,7 @@
                 srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
               <source media="(min-width:660px)"
                 srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
-              <img class="photo__img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x"
+              <img class="photo__img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x"
                 width="280" height="180" alt="Крыло самолета">
             </picture>
             <div class="photo__inscription">
@@ -229,10 +229,77 @@
         </li>
       </ul>
     </section>
+
+    <div class="page-main__heading">
+      <p>Затмите их всех!</p>
+      <p> Выкладывайте все, что накопилось в телефоне!</p>
+    </div>
+
+    <section class="photo-download">
+      <div class="photo-download__wrapper">
+        <picture>
+          <source type="image/webp" media="(min-width: 960px)"
+            srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)"
+            srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
+          <source media="(min-width:960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+          <source media="(min-width:660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+          <img class="photo-download__img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x"
+            width="280" height="375" alt="Снежная дорога">
+        </picture>
+        <div class="photo-download__edit-right">
+          <div class="photo-download__container">
+
+            <ul class="photo-download__edit">
+              <li>
+                <svg class="photo-download__edit-svg photo-download__edit-svg--crop photo-download__edit-svg--active"
+                  enable-background="new 0 0 48 48" height="48" width="48">
+                  <use xlink:href="#icon-editor-crop"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="photo-download__edit-svg photo-download__edit-svg--fill" enable-background="new 0 0 48 48" height="48" width="48">
+                  <use xlink:href="#icon-editor-fill"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="photo-download__edit-svg photo-download__edit-svg--contrast"
+                  enable-background="new -35.422 -7.96 31.92 31.92" height="32" width="32">
+                  <use xlink:href="#icon-editor-contrast"></use>
+                </svg>
+              </li>
+            </ul>
+
+            <div class="photo-download__edit-container">
+              <div class="photo-download__edit-range">
+                <div class="photo-download__scale"></div>
+                <div class="photo-downloads__toggle photo-downloads__toggle--crop"></div>
+              </div>
+              <div class="photo-download__edit-range photo-download__edit-range--mobile">
+                <div class="photo-download__scale"></div>
+                <div class="photo-downloads__toggle photo-downloads__toggle--fill"></div>
+              </div>
+              <div class="photo-download__edit-range photo-download__edit-range--mobile">
+                <div class="photo-download__scale"></div>
+                <div class="photo-downloads__toggle photo-downloads__toggle--contrast"></div>
+              </div>
+            </div>
+
+          </div> <!--end photo-download__container -->
+
+        <div class="photo-download__btn-wrapper">
+          <button class="button photo-download__button" type="submit">Запостить</button>
+          <button class="button photo-download__button--cancel" type="submit">Отмена</button>
+        </div>
+
+      </div>
+      </div>
+    </section>
     <!--Запостить свое фото-->
   </main>
   <footer class="page-footer">
-    <div class="page-footer__logo">
+    <div class="page-footer__logo page-footer__logo--photo">
       <a class="page-footer__logo-link" href="index.html">
         <svg class="page-footer__logo-svg page-footer__logo-svg--desktop" enable-background="new 0 0 146.3 40.375"
           width="146.3px" height="40.375px">

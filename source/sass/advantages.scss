@@ -22,8 +22,9 @@
 
 .advantages__list-cover {
   background: $bg-color url("../img/bg-triangle-white1.svg") no-repeat;
-  background-position: 50% calc(-445px + 14vw);
-  background-size: cover;
+  /*background-position: 50% calc(-445px + 14vw);
+  background-size: cover;*/
+  background-size: 101% auto;
 }
 
 .advantages__list-wrapper {
@@ -82,7 +83,7 @@
   }
 
   .advantages__list-cover {
-    background-position: 50% -210px;
+    /*background-position: 50% -210px; */
     height: 495px;
     margin-bottom: 60px;
   }
@@ -117,7 +118,7 @@
   .advantages__list-cover {
     height: auto;
     margin: 0;
-    background-position: 50% -192px;
+    /*background-position: 50% -192px; */
     /*background-image: linear-gradient(to bottom, $second-color 85px, $bg-color 85px);*/
     /*background: $bg-color;
     width: 100%;
@@ -165,6 +166,7 @@
     justify-content: center;
     width: 241px;
     margin-right: 0;
+    margin-left: 10px;
   }
 
   .advantages__title {

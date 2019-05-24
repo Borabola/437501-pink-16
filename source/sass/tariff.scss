@@ -1,20 +1,344 @@
-.tariff__table {
-  width: 620px;
-  margin: 0 auto;
-  border-collapse: collapse;
+.tariff {
+  padding-bottom: 103px;
+  background-color: $bg-color;
+  background-image: url("../img/bg-triangle-white1.svg");
+  background-repeat: no-repeat;
+  background-size: 101% auto;
+  overflow: hidden;
 }
 
-.tariff__item-hidden {
-  background: transparent;
-  border-top: none;
-  border-left: none;
-  border-right: 2px solid #e7e7e7;
+.tariff__wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -10px;
+}
+
+.tariff__table {
+  position: relative;
+  width: 844px;
+  margin: 100px auto 32px;
+  padding-top: 100px;
+  border-collapse: collapse;
+  background-color: $second-color;
 }
 
 .tariff__item-heading {
-  width: 280px;
-  font-size: 16px;
-  line-height: $line-height-large;
-  color: $second-color;
+  box-sizing: border-box;
+  min-width: 278px;
+  padding: 16px 80px 22px 80px;
   background-color: $primary-color;
+  border-right: 2px solid $bg-color;
+  flex-shrink: 0;
+
+  & p {
+    font-size: $font-size-large;
+    line-height: $line-height-large;
+    font-weight: 200;
+    color: $second-color;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+
+    &:first-of-type {
+      font-size: $font-size-medium;
+      line-height: $line-height-large;
+      font-weight: 600;
+    }
+  }
+
+  &--hit {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -2px;
+      width: 74px;
+      height: 73px;
+      background: url("../img/bg-hit.svg") no-repeat top left;
+      background-size: 74px 73px;
+    }
+
+    &::after {
+      content: "хит";
+      position: absolute;
+      top: 7px;
+      left: 3px;
+      width: 74px;
+      height: 73px;
+      transform: rotate(-45deg);
+      color: $second-color;
+      text-transform: uppercase;
+    }
+  }
 }
+
+td.tariff__item-filter,
+.tariff__item-hidden {
+  display: none;
+}
+
+.tariff__item-check {
+  box-sizing: border-box;
+  /*min-width: 280px;*/
+  padding: 16px 20px 18px 22px;
+
+  text-transform: uppercase;
+  border: 2px solid #e5e5e5;
+
+  &--yes {
+    background: url("../img/icon-yes.svg") no-repeat;
+    background-size: 31px 25px;
+    background-position: right 16px center;
+  }
+
+  &--no {
+    background-image: url("../img/icon-no.svg");
+    background-repeat: no-repeat;
+    background-position: 92.5% 40%;
+  }
+}
+
+.tariff-slider {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 40px;
+}
+
+
+.tariff-slider__controls {
+  width: 50vw;
+  margin: 0 auto;
+  padding-left: 100px;
+  font-size: 0;
+  order: 2;
+}
+
+.tariff-slider__controls label {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 18px;
+
+  vertical-align: middle;
+
+  background-color: #bec2c7;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #7e868f;
+  }
+
+  &:active {
+    background-color: #e9ebec;
+  }
+}
+
+.left:checked ~ .tariff-slider label[for="left"],
+.middle:checked ~ .tariff-slider label[for="middle"],
+.right:checked ~ .tariff-slider label[for="right"] {
+  background: transparent;
+  border: 3px solid #283645;
+  border-radius: 50%;
+}
+
+.left:checked ~ table.tariff-table {
+  margin: 0;
+  margin-top: 25px;
+  border: 2px solid red;
+  background-color: red;
+}
+
+
+.middle:checked ~ table.tariff-table {
+  margin: 0;
+  margin-top: 25px;
+  border: 2px solid green;
+  background-color: green;
+}
+
+.right:checked ~ table.tariff-table {
+  margin: 0;
+  margin-top: 25px;
+  border: 2px solid yellow;
+  background-color: yellow;
+}
+
+@media (min-width: $tablet-width) {
+  .tariff__wrapper {
+    padding: 0 20px;
+  }
+
+  .tariff__table {
+    width: 100%;
+  }
+
+  .tariff-slider__controls {
+    display: none;
+  }
+
+  .tariff__item-hidden {
+    display: table-cell;
+    box-sizing: border-box;
+    width: 24.6%;
+
+    background-color: $bg-color;
+    border: 0;
+  }
+
+  td.tariff__item-filter {
+    display: table-cell;
+    box-sizing: border-box;
+    width: 24.6%;
+    padding: 5px 16px 10px;
+
+    font-size: $font-size-base;
+    line-height: $line-height-large;
+    color: $primary-color;
+
+    border: 2px solid #e5e5e5;
+    background-color: $second-color;
+  }
+
+  .tariff__item-heading {
+    box-sizing: border-box;
+    width: 24.7%;
+    min-width: 152px;
+    padding: 12px 30px 10px;
+    flex-shrink: 0;
+
+    &--hit::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -2px;
+      width: 74px;
+      height: 73px;
+      background: url("../img/bg-hit-tablet.svg") no-repeat top left;
+      background-size: 61px 61px;
+      }
+
+      &::after {
+        content: "хит";
+        position: absolute;
+        top: 0;
+        left: -1px;
+        width: 74px;
+        height: 73px;
+        transform: rotate(-45deg);
+        color: $second-color;
+        text-transform: uppercase;
+      }
+
+    & p {
+      font-size: $font-size-medium;
+      line-height: 27px;
+      font-weight: 200;
+      color: $second-color;
+      text-transform: uppercase;
+      text-align: center;
+      vertical-align: middle;
+
+      &:first-of-type {
+        font-size: 16px;
+        line-height: $line-height-large;
+        font-weight: 600;
+      }
+      }
+  }
+
+  .tariff__item-check {
+    box-sizing: border-box;
+    /* width: 24.6%;
+    min-width: 152px;*/
+    padding: 0;
+    min-height: 45px;
+    background-color: $second-color;
+
+    &--yes {
+      background-position: 50% 50%;
+    }
+
+    &--no {
+      background-position: 50% 50%;
+    }
+
+    span {
+      display: none;
+    }
+  }
+
+  .tariff-slider {
+    padding-bottom: 34px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tariff {
+    margin-top: -17px;
+  }
+
+
+  .tariff__wrapper {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .tariff__table {
+    margin-top: 155px;
+  }
+
+  .tariff__item-heading {
+    box-sizing: border-box;
+    width: 25%;
+    padding: 16px 30px 18px;
+
+    font-size: $font-size-medium;
+    letter-spacing: 1.1px;
+
+    &--hit::before {
+      content: "";
+      position: absolute;
+      background: url("../img/bg-hit-desktop.svg") no-repeat top left;
+      }
+
+      &::after {
+        content: "хит";
+        position: absolute;
+        top: 8px;
+        left: 4px;
+        font-size: $font-size-base;
+      }
+
+    & p {
+      font-size: $font-size-large;
+      line-height: 30px;
+      letter-spacing: -0.2px;
+
+
+      &:first-of-type {
+        font-size: 16px;
+        line-height: $line-height-large;
+        font-weight: 600;
+        letter-spacing: 1.3px;
+        margin-bottom: 2px;
+      }
+      }
+  }
+
+  td.tariff__item-filter {
+    width: 25%;
+    padding: 15px 21px 14px;
+
+    font-size: $font-size-medium;
+  }
+
+  .tariff-slider {
+    padding-bottom: 62px;
+  }
+}
+

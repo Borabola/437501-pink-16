@@ -1,0 +1,130 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.contacts__title {
+  font-size: $font-size-large;
+  line-height: $line-height-large;
+  font-weight: 200;
+
+  margin-top: 44px;
+  margin-bottom: 30px;
+}
+
+.contacts__text {
+  font-size: $font-size-medium;
+  line-height: $line-height-large;
+  font-weight: 600;
+  color: $primary-color;
+}
+
+.contacts__info {
+  font-size: $font-size-large;
+  line-height: $line-height-base;
+  font-weight: 200;
+  color: $highlight-color;
+  margin-bottom: 21px;
+
+  &--email {
+    margin-top: 2px;
+    margin-bottom: 25px;
+  }
+
+  &--addres {
+    width: 59.4%;
+    margin: 0 auto 38px;
+    line-height: 28px;
+
+    & span {
+      margin-left: -10px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .contacts__title {
+    min-width: 350px;
+    margin: 47px auto 41px auto;
+    padding: 0 50px;
+
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .contacts__tel {
+    width: 50%;
+  }
+
+  .contacts__email {
+    width: 50%;
+    margin-left: -20px;
+  }
+
+  .contacts__info {
+    margin-top: 5px;
+    margin-bottom: 45px;
+
+    &--addres {
+      padding-left: 10px;
+      margin-bottom: 27px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    max-width: 940px;
+    margin: 0 auto;
+  }
+
+  .contacts__title {
+    min-width: 435px;
+    margin: 65px auto 53px auto;
+    padding: 0 200px;
+
+    font-size: $font-size-title-desktop;
+    line-height: $line-height-title-desktop;
+  }
+
+  .contacts__title {
+    order: 1;
+  }
+
+  .contacts__tel {
+    width: 30%;
+    order: 2;
+  }
+
+  .contacts__addres {
+    width: 36%;
+    margin-left: -10px;
+    margin-right: 10px;
+    order: 3;
+  }
+
+  .contacts__email {
+    width: 30%;
+    order: 4;
+  }
+
+  .contacts__text {
+    margin-bottom: 22px;
+  }
+
+  .contacts__info {
+    margin-bottom: 55px;
+
+    &--addres {
+    margin-bottom: 0;
+    }
+  }
+}
