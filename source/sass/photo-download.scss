@@ -108,12 +108,14 @@ svg.photo-download__edit-svg {
     font-weight: 600;
     color: $second-color;
     background-color: $highlight-color;
+    outline: none;
   }
 
   &:active {
     font-weight: 400;
     color: $highlight-color-active;
     background-color: $highlight-color;
+    outline: none;
   }
 
   &--cancel {
@@ -159,7 +161,7 @@ svg.photo-download__edit-svg {
   .photo-download__edit-right {
     display: flex;
     flex-direction: column;
-    padding: 57px 0 54px;
+    padding: 57px 0 0;
     width: 44.35%;
   }
 
@@ -167,6 +169,8 @@ svg.photo-download__edit-svg {
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
+    margin-bottom: 28px;
+
   }
 
   .photo-download__edit {
@@ -183,6 +187,10 @@ svg.photo-download__edit-svg {
       padding: 0;
       padding-bottom: 9px;
       border-bottom: 1px solid #dddfe0;
+
+      &:nth-child(2) {
+        padding-bottom: 6px;
+      }
     }
   }
 
@@ -233,22 +241,26 @@ svg.photo-download__edit-svg {
     &--mobile {
       display: block;
     }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .photo-downloads__toggle {
     position: absolute;
     top: 12.5px;
-    left: 170px;
+    left: 70%;
     width: 10px;
     height: 10px;
     padding: 0;
 
     &--fill {
-      left: 52px;
+      left: 22%;
     }
 
     &--contrast {
-      left: 70px;
+      left: 50%;
     }
   }
 
@@ -258,6 +270,111 @@ svg.photo-download__edit-svg {
       margin: 10px auto 0;
       padding-left: 7px;
       background: #283645;
+  }
+
+  .photo-download__btn-wrapper {
+    width: 94%;
+    margin-left: 4px;
+  }
+
+  .photo-download__button {
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+
+    &--cancel {
+      letter-spacing: 2px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-download {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .photo-download__wrapper {
+    box-sizing: border-box;
+    width: 85.1%;
+    min-width: 800px;
+    margin: 0;
+    margin-left: 80px;
+    margin-right: 60px;
+    padding-bottom: 57px;
+    /*padding-left: 80px;
+    padding-right: 60px; */
+  }
+
+  .photo-download__wrapper picture {
+    min-width: 300px;
+    width: 37.45%;
+    padding: 0;
+  }
+
+  .photo-download__img {
+    width: 37.45%;
+    min-width: 300px;
+    margin: 0;
+    padding: 57px 0 0;
+  }
+
+  .photo-download__edit-right {
+    width: 51.1%;
+    min-width: 410px;
+  }
+
+  .photo-download__edit {
+    width: 12.2%;
+    min-width: 50px;
+  }
+
+  svg.photo-download__edit-svg {
+    width: 12.2%;
+    min-width: 50px;
+
+    &--fill {
+      margin-top: -2px;
+      margin-bottom: -1px;
+    }
+
+    &--contrast {
+      min-width: 32px;
+      /*margin-top: 0;
+      margin-left: 5px;
+      padding-bottom: 10px; */
+    }
+  }
+
+  .photo-download__edit-container {
+    width: 88.05%;
+    min-width: 361px;
+  }
+
+  .photo-download__btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    min-width: 404px;
+    margin-top: 120px;
+  }
+
+  .photo-download__button,
+  .photo-download__button--cancel {
+    width: 43.4%;
+    letter-spacing: 0;
+    margin-bottom: 0;
+  }
+
+  .photo-downloads__toggle {
+    left: 30%;
+
+    &--fill {
+      left: 80%;
+    }
+
+    &--contrast {
+      left: 55%;
+    }
   }
 }
 

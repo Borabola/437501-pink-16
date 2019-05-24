@@ -53,6 +53,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .user-photo {
+    margin-bottom: 5px;
+  }
+
   .user-photo__list {
     width: 940px;
     margin: 0 auto;
