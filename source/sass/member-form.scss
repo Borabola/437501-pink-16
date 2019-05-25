@@ -433,11 +433,10 @@
   }
 
   .member-form__tel-input[type="email"] {
-    padding-left: 18px;
+    padding: 18px 22px 19px 18px;
     background-image: url("../img/icon-mail1.svg"), linear-gradient(to left, #e5e5e5 60px, #ffffff 60px);
     background-repeat: no-repeat, no-repeat;
     background-position: calc(100% - 20px) 50%, 0 0;
-    padding: 18px 22px 19px 18px;
   }
 
   .member-form__success fieldset {
@@ -449,11 +448,6 @@
   .member-form__label-check {
     padding-left: 29px;
   }
-
-  /*.member-form__checkbox:checked+label::before {
-    content: "";
-    top: -6px;
-  }*/
 
   .member-form__check-item:last-child {
     margin-bottom: 22px;
@@ -586,7 +580,7 @@
   }
 
   @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-      .member-form__check-item {
+    .member-form__check-item {
       box-sizing: border-box;
       padding-left: 24px;
 

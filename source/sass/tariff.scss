@@ -303,8 +303,8 @@ td.tariff__item-filter,
     &--hit::before {
       content: "";
       position: absolute;
-      top: 0px;
-      left: 0px;
+      top: 0;
+      left: 0;
       width: 74px;
       height: 73px;
       background: url("../img/bg-hit.svg") no-repeat top left;
