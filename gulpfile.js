@@ -86,6 +86,7 @@ gulp.task("compress", function() {
   return pipeline(
     gulp.src("source/js/*.js"),
     concat("pinkall.js"),
+    /*gulp.dest("build/js"),  временно */
     /*gulp.dest("build/js"),*/
     uglify(),
     rename("pink.min.js"),

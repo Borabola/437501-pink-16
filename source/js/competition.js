@@ -2,7 +2,7 @@ var competitionSent = document.querySelector(".member-form__sent");
 var popupSent = document.querySelector(".modal__sent");
 var popupUnsent = document.querySelector(".modal__unsent");
 var closeSent = document.querySelector(".modal__close");
-var closeUnsent = document.querySelector(".modal__close--unsent");
+var closeUnsent = document.querySelector(".modal__close-unsent");
 var userName = document.querySelector(".member-form__surname");
 var userSurname = document.querySelector(".member-form__surname");
 var userEmail = document.querySelector("[type=email]");

@@ -51,11 +51,11 @@
 .modal__close {
   width: 280px;
   margin: 45px 20px 55px 20px;
+}
 
-  &--unsent {
+.modal__close-unsent {
     width: 280px;
     margin: 45px auto 55px auto;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -91,7 +91,8 @@
     background-color: $bg-color;
   }
 
-  .modal__close {
+  .modal__close,
+  .modal__close-unsent {
     width: 280px;
     margin: 47px 80px 53px 80px;
   }
@@ -117,7 +118,8 @@
     padding-right: 70px;
   }
 
-  .modal__close {
+  .modal__close,
+  .modal__close-unsent {
     width: 460px;
     margin: 47px 160px 53px 160px;
   }

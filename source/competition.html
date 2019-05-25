@@ -6,7 +6,7 @@
   <title>Конкурс «Pink»</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.min.css" rel="stylesheet">
-  <link rel="preload" href="fonts/opensans.woff2" as="fonts">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
 </head>
 
 <body>
@@ -58,7 +58,7 @@
     <section class="member-form">
       <h2 class="visually-hidden">Форма участника конкурса</h2>
       <p class="member-form__subtitle">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
-        вашу бонусную карту! <span class="member-form__subtitle--hidden">Пожалуйста, заполните форму ниже:</span> </p>
+        вашу бонусную карту! <span class="member-form__subtitle member-form__subtitle--hidden">Пожалуйста, заполните форму ниже:</span> </p>
       <form class="member-form__form" method="post" action="https://echo.htmlacademy.ru">
         <div class="member-form__main-block member-form__fullname">
           <div class="member-form__line">
@@ -171,7 +171,7 @@
         </div>
         <div class="member-form__main-block member-form__main-block--btn">
           <button class="button button--competition member-form__sent" type="submit">Отправить форму</button>
-          <p class="member-form__required"><span>*</span> — обязательные <span class="member-form__required--hidden">для
+          <p class="member-form__required"><span>*</span> — обязательные <span class="member-form__required member-form__required--hidden">для
               заполнения</span>поля</p>
         </div>
       </form>
@@ -239,7 +239,7 @@
     <p class="modal__title">Что-то пошло не так!</p>
     <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.</p>
     <div class="modal__btn-wrapper modal__btn-wrapper--unsent">
-      <button class="button button--competition modal__close--unsent" type="button">OK</button>
+      <button class="button button--competition modal__close-unsent" type="button">OK</button>
     </div>
   </section>
   <script src="js/pink.min.js"></script>

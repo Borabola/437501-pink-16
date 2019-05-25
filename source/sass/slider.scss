@@ -217,4 +217,12 @@
     font-size: $font-size-medium;
     margin-bottom: 28px;
   }
+
+  .slider__controls {
+    display: none;
+  }
+
+  .slider__order {
+    margin-bottom: 24px;
+  }
 }

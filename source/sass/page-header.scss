@@ -130,6 +130,7 @@ svg.page-header__logo-svg {
   }
 
   .page-header__line {
+    min-height: 110px; /*T*/
     border: 0;
     background-color: transparent;
   }
@@ -143,20 +144,19 @@ svg.page-header__logo-svg {
   }
 
   .page-header__logo svg {
-    width: 160px;
-
-    height: 50px; /* временные размеры */
+    width: 148px;
+    height: 50px;
     margin: 0;
     padding: 0;
-    padding-top: 24px;
+    padding-top: 23px;
   }
 
   .page-header__logo-image {
-    width: 150px;
-    height: 50px; /* временные размеры */
+    width: 148px;
+    height: 50px;
     margin: 0;
     padding: 0;
-    padding-top: 24px;
+    padding-top: 23px;
   }
 
   .page-header__logo-svg--mobile {

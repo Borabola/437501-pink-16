@@ -74,7 +74,7 @@ svg.photo-download__edit-svg {
   background: $primary-color;
 }
 
-.photo-downloads__toggle {
+.photo-download__toggle {
   position: absolute;
   top: -6px;
   left: 231px;
@@ -112,8 +112,8 @@ svg.photo-download__edit-svg {
   }
 
   &:active {
-    font-weight: 400;
-    color: $highlight-color-active;
+    font-weight: 600;
+    color: #e06989;
     background-color: $highlight-color;
     outline: none;
   }
@@ -123,6 +123,7 @@ svg.photo-download__edit-svg {
     margin-bottom: 43px;
     color: rgba(40, 54, 69, 0.1);
     box-shadow: 0 0 0 3px rgba(40, 54, 69, 0.1);
+    outline: none;
 
     &:hover,
     &:focus {
@@ -246,7 +247,7 @@ svg.photo-download__edit-svg {
     }
   }
 
-  .photo-downloads__toggle {
+  .photo-download__toggle {
     position: absolute;
     top: 12.5px;
     left: 70%;
@@ -359,7 +360,7 @@ svg.photo-download__edit-svg {
     margin-bottom: 0;
   }
 
-  .photo-downloads__toggle {
+  .photo-download__toggle {
     left: 30%;
 
     &--fill {
