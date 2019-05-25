@@ -70,7 +70,7 @@
   width: 100%;
   margin: 0;
   margin-bottom: 17px;
-  padding: 14px 22px 15px 21px;
+  padding: 16px 22px 19px 21px;
   text-align: left;
   border: 2px solid #e5e5e5;
   border-radius: 2px;
@@ -109,11 +109,16 @@
   text-align: center;
 }
 
+.member-form__tel {
+  margin-bottom: 25px;
+}
+
 .member-form__tel-legend {
   display: none;
 }
 
 .member-form__check {
+  margin: 0;
   padding: 20px 0 0 30px;
 }
 
@@ -141,7 +146,7 @@
     content: "";
     position: absolute;
     left: -30px;
-    top: -4px;
+    top: -3px;
     width: 35px;
     height: 35px;
     background-color: #ffffff;
@@ -159,11 +164,12 @@
   }
 }
 
+
 .member-form__checkbox:checked + label::before {
   content: "";
   position: absolute;
   left: -30px;
-  top: -4px;
+  top: -3px;
   width: 35px;
   height: 35px;
   background-color: #ffffff;
@@ -173,6 +179,11 @@
   background-size: 22px 16px;
   border: 2px solid #e5e5e5;
   border-radius: 1px;
+}
+
+.member-form__checkbox:checked + label:hover::before,
+.member-form__checkbox:checked + label:focus::before {
+  border: 2px solid $primary-color;
 }
 
 .member-form__radio {
@@ -322,13 +333,11 @@
     font-weight: 400;
     text-align: center;
     letter-spacing: 0;
-    padding-top: 91px;
-    padding-bottom: 90px;
-    padding-left: 82px;
-    padding-right: 82px;
+    padding: 93px 82px 90px 81px;
 
     &--hidden {
       display: inline;
+      padding: 0;
     }
   }
 
@@ -389,6 +398,9 @@
     padding-left: 25px;
   }
 
+  .member-form__tel-input {
+    margin-bottom: 15px;
+  }
 
   .member-form__tel fieldset {
     border: 2px solid #e5e5e5;
@@ -425,6 +437,7 @@
     background-image: url("../img/icon-mail1.svg"), linear-gradient(to left, #e5e5e5 60px, #ffffff 60px);
     background-repeat: no-repeat, no-repeat;
     background-position: calc(100% - 20px) 50%, 0 0;
+    padding: 18px 22px 19px 18px;
   }
 
   .member-form__success fieldset {
@@ -436,6 +449,11 @@
   .member-form__label-check {
     padding-left: 29px;
   }
+
+  /*.member-form__checkbox:checked+label::before {
+    content: "";
+    top: -6px;
+  }*/
 
   .member-form__check-item:last-child {
     margin-bottom: 22px;
@@ -455,7 +473,6 @@
 
   .member-form__required {
     margin-top: 17px;
-    letter-spacing: -1.25px;
   }
 }
 
@@ -487,7 +504,7 @@
     box-sizing: border-box;
     width: 46.17%;
     margin: 0;
-    margin-bottom: 36px;
+    margin-bottom: 34px;
     margin-top: 43px;
     padding: 0;
     padding-left: 10px;
@@ -501,7 +518,7 @@
     box-sizing: border-box;
     width: 45.2%;
     margin-top: 5px;
-    margin-bottom: 48px;
+    margin-bottom: 20px;
     margin-right: 10px;
   }
 
@@ -527,7 +544,7 @@
   }
 
   .member-form__radio {
-    padding: 22px 58px 14px 72px;
+    padding: 20px 58px 14px 72px;
   }
 
   .member-form__tel fieldset {
@@ -552,7 +569,7 @@
   }
 
   .member-form__tel-input {
-    margin-bottom: 15px;
+    margin-bottom: 13px;
   }
 
   .member-form__main-block--success fieldset {
@@ -564,8 +581,51 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    padding-right: 0;
     padding-left: 0;
+  }
+
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      .member-form__check-item {
+      box-sizing: border-box;
+      padding-left: 24px;
+
+      &:first-child {
+        min-width: 260px;
+        width: 36.36%;
+        order: 1;
+      }
+
+      &:nth-child(2) {
+        min-width: 260px;
+        width: 36.36%;
+        order: 4;
+      }
+
+      &:nth-child(3) {
+        min-width: 245px;
+        width: 34.27%;
+        order: 2;
+      }
+
+      &:nth-child(4) {
+        min-width: 245px;
+        width: 34.27%;
+        order: 5;
+      }
+
+      &:nth-child(5) {
+        min-width: 210px;
+        width: 29.37%;
+        order: 3;
+      }
+
+      &:nth-child(6) {
+        min-width: 210px;
+        width: 29.37%;
+        order: 6;
+      }
+    }
   }
 
   .member-form__check-item {
@@ -606,7 +666,7 @@
   .member-form__label-check {
     padding-top: 37px;
     padding-left: 36px;
-    padding-right: 25px;
+    /*padding-right: 25px;*/
     margin-bottom: 25px;
 
 

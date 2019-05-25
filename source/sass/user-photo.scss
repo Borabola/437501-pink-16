@@ -43,12 +43,12 @@
   .user-photo__subtitle {
     font-size: $font-size-medium;
     line-height: $line-height-large;
-    letter-spacing: -1.2px;
+    letter-spacing: 0;
     /* width: 383px; */
     padding-top: 92px;
     padding-bottom: 76px;
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-left: 90px;
+    padding-right: 90px;
   }
 }
 
