@@ -6,7 +6,10 @@
   <title>Фотоприложение «Pink»</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="css/style.min.css" as="style">
   <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
 </head>
 
 <body>
@@ -63,16 +66,31 @@
 
         <div class="operating-systems">
           <h2 class="operating-systems__title">Взгляните на жизнь иначе!</h2>
-          <a class="operating-systems__link button" href="pink-application.html">Скачать приложение</a>
+          <a class="operating-systems__link button" href="https://www.apple.com/itunes/">Скачать приложение</a>
           <ul class="operating-systems__list">
             <li class="operating-systems__item operating-systems__item--apple">
-              <span class="visually-hidden"> Apple</span>
+              <a href="https://www.apple.com/itunes/">
+                <span class="visually-hidden"> Apple</span>
+                <svg width="46px" height="57px">
+                    <use xlink:href="#logo-apple"></use>
+                </svg>
+              </a>
             </li>
             <li class="operating-systems__item operating-systems__item--android">
-              <span class="visually-hidden"> Android</span>
+                <a href="https://www.apple.com/itunes/">
+                  <span class="visually-hidden"> Android</span>
+                  <svg width="42px" height="47px">
+                      <use xlink:href="#logo-android"></use>
+                  </svg>
+                </a>
             </li>
             <li class="operating-systems__item operating-systems__item--windows">
-              <span class="visually-hidden"> Windows</span>
+                <a href="https://www.microsoft.com/en-us/p/itunes/9pb2mz1zmb1s?activetab=pivot%3Aoverviewtab">
+                  <span class="visually-hidden"> Windows</span>
+                  <svg width="44px" height="42px">
+                      <use xlink:href="#logo-microsoft"></use>
+                  </svg>
+                </a>
             </li>
           </ul>
           <p class="operating-systems__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>

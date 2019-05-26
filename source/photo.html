@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/style.min.css" rel="stylesheet">
   <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
 </head>
 
 <body>
@@ -63,17 +65,19 @@
         Видите, как не хватает ваших?</p>
       <article class="panorama">
         <h3 class="visually-hidden">Над городом</h3>
-        <picture>
-          <source type="image/webp" media="(min-width: 960px)"
-            srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 660px)"
-            srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
-          <source media="(min-width:960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-          <source media="(min-width:660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-          <img class="panorama__img" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x"
-            alt="Вид с моста">
-        </picture>
+        <a href="">
+          <picture>
+            <source type="image/webp" media="(min-width: 960px)"
+              srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)"
+              srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
+            <source media="(min-width:960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width:660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img class="panorama__img" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x"
+              alt="Вид с моста">
+          </picture>
+        </a>
         <div class="panorama__inscription">
           <p class="panorama__author">Анна <time class="user-photo__time" title="4 апреля 2019 11:55"
               datetime="2019-04-04 11:55">&nbsp;(5 МИНУТ НАЗАД)</time></p>
@@ -87,18 +91,21 @@
         <li>
           <article class="photo">
             <h3 class="visually-hidden">Белая машина</h3>
-            <picture>
-              <source type="image/webp" media="(min-width: 960px)"
-                srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 660px)"
-                srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
-              <source media="(min-width:960px)"
-                srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
-              <source media="(min-width:660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-              <img class="photo__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x"
-                alt="Белая машина">
-            </picture>
+            <a href="">
+              <picture>
+                <source type="image/webp" media="(min-width: 960px)"
+                  srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
+                <source media="(min-width:960px)"
+                  srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width:660px)"
+                  srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img class="photo__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x"
+                  alt="Белая машина">
+              </picture>
+            </a>
             <div class="photo__inscription">
               <p class="photo__author">Левон <time class="photo__time" title="4 апреля 2019 7:00"
                   datetime="2019-04-02 07:00">&nbsp;(5 ЧАСОВ НАЗАД)</time></p>
@@ -110,20 +117,22 @@
         <li>
           <article class="photo">
             <h3 class="visually-hidden">Барабаны</h3>
-            <picture>
-              <source type="image/webp" media="(min-width: 960px)"
-                srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 660px)"
-                srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
-              <source type="image/webp"
-                srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
-              <source media="(min-width:960px)"
-                srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
-              <source media="(min-width:660px)"
-                srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
-              <img class="photo__img" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x"
-                alt="Барабаны">
-            </picture>
+            <a href="">
+              <picture>
+                <source type="image/webp" media="(min-width: 960px)"
+                  srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
+                <source media="(min-width:960px)"
+                  srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width:660px)"
+                  srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="photo__img" src="img/photo-drumset-mobile@1x.jpg"
+                  srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Барабаны">
+              </picture>
+            </a>
             <div class="photo__inscription">
               <p class="photo__author">Антон <time class="photo__time" title="4 апреля 2019 0:00"
                   datetime="2019-04-02 00:00">&nbsp;(12 ЧАСОВ НАЗАД)</time></p>
@@ -135,19 +144,22 @@
         <li>
           <article class="photo">
             <h3 class="visually-hidden">Окна</h3>
-            <picture>
-              <source type="image/webp" media="(min-width: 960px)"
-                srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 660px)"
-                srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
-              <source media="(min-width:960px)"
-                srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
-              <source media="(min-width:660px)"
-                srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
-              <img class="photo__img" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x"
-                width="280" height="180" alt="Окна">
-            </picture>
+            <a href="">
+              <picture>
+                <source type="image/webp" media="(min-width: 960px)"
+                  srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
+                <source media="(min-width:960px)"
+                  srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width:660px)"
+                  srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img class="photo__img" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x"
+                  width="280" height="180" alt="Окна">
+              </picture>
+            </a>
             <div class="photo__inscription">
               <p class="photo__author">Борис <time class="photo__time" title="3 апреля 2019 4:00"
                   datetime="2019-04-03 04:00">&nbsp;(12 ЧАСОВ НАЗАД)</time></p>
@@ -159,19 +171,21 @@
         <li>
           <article class="photo">
             <h3 class="visually-hidden">Кубанская бахча</h3>
-            <picture>
-              <source type="image/webp" media="(min-width: 960px)"
-                srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 660px)"
-                srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
-              <source media="(min-width:960px)"
-                srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
-              <source media="(min-width:660px)"
-                srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
-              <img class="photo__img" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x"
-                width="280" height="180" alt="Кубанская бахча">
-            </picture>
+            <a href="">
+              <picture>
+                <source type="image/webp" media="(min-width: 960px)"
+                  srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
+                <source media="(min-width:960px)"
+                  srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width:660px)"
+                  srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img class="photo__img" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x"
+                  width="280" height="180" alt="Кубанская бахча">
+              </picture>
+            </a>
             <div class="photo__inscription">
               <p class="photo__author">Сергей <time class="photo__time" title="3 апреля 2019 11:00"
                   datetime="2019-04-03 11:00">&nbsp;(25 ЧАСОВ НАЗАД)</time></p>
@@ -183,18 +197,21 @@
         <li>
           <article class="photo">
             <h3 class="visually-hidden">Вид с горы</h3>
-            <picture>
-              <source type="image/webp" media="(min-width: 960px)"
-                srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 660px)"
-                srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
-              <source media="(min-width:960px)"
-                srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
-              <source media="(min-width:660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
-              <img class="photo__img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x"
-                width="280" height="180" alt="Вид с горы">
-            </picture>
+            <a href="">
+              <picture>
+                <source type="image/webp" media="(min-width: 960px)"
+                  srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
+                <source media="(min-width:960px)"
+                  srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width:660px)"
+                  srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img class="photo__img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x"
+                  width="280" height="180" alt="Вид с горы">
+              </picture>
+            </a>
             <div class="photo__inscription">
               <p class="photo__author">Максим<time class="photo__time" title="2 апреля 2019 11:00"
                   datetime="2019-04-02 20:00">&nbsp;(40 ЧАСОВ НАЗАД)</time></p>
@@ -206,19 +223,21 @@
         <li>
           <article class="photo">
             <h3 class="visually-hidden">Крыло самолета</h3>
-            <picture>
-              <source type="image/webp" media="(min-width: 960px)"
-                srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 660px)"
-                srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
-              <source media="(min-width:960px)"
-                srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
-              <source media="(min-width:660px)"
-                srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
-              <img class="photo__img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x"
-                width="280" height="180" alt="Крыло самолета">
-            </picture>
+            <a href="">
+              <picture>
+                <source type="image/webp" media="(min-width: 960px)"
+                  srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)"
+                  srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
+                <source media="(min-width:960px)"
+                  srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width:660px)"
+                  srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img class="photo__img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x"
+                  width="280" height="180" alt="Крыло самолета">
+              </picture>
+            </a>
             <div class="photo__inscription">
               <p class="photo__author">Надежда <time class="photo__time" title="2 апреля 2019 15:00"
                   datetime="2019-04-02 15:00">&nbsp;(45 ЧАСОВ НАЗАД)</time></p>
