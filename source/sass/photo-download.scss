@@ -130,6 +130,7 @@ svg.photo-download__edit-svg {
     &:focus {
       color: rgba(40, 54, 69, 0.3);
       box-shadow: 0 0 0 3px rgba(40, 54, 69, 0.3);
+      background-color: transparent;
       outline: none;
     }
 
